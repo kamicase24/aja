@@ -1,0 +1,744 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"btn",
+				"btn-default"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"tart_",
+				"trat_form"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"col-",
+				"col-md-6"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"p",
+				"placeholder"
+			],
+			[
+				"date",
+				"datetimepicker2"
+			],
+			[
+				"colmd-",
+				"col-md-3"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"_",
+				"_SESSION"
+			],
+			[
+				"gett",
+				"gettype"
+			],
+			[
+				"timesta",
+				"date_timestamp_get"
+			],
+			[
+				"log",
+				"log_user"
+			],
+			[
+				"pg_num",
+				"pg_num_rows"
+			],
+			[
+				"pw_",
+				"pw_cryp"
+			],
+			[
+				"src",
+				"src_qutn"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"src_",
+				"src_anw"
+			],
+			[
+				"pw",
+				"pw_user"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"caracter",
+				"caracterClave"
+			],
+			[
+				"tex",
+				"texto_decodificado"
+			],
+			[
+				"te",
+				"texto_codificado"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"pg_fetch_",
+				"pg_fetch_row"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"for",
+				"form	Tag"
+			],
+			[
+				"met",
+				"meta	Tag"
+			],
+			[
+				"ti",
+				"title	Tag"
+			],
+			[
+				"s_bo",
+				"s_body_span"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 1566,
+				"line_ending": "Unix",
+				"name": "<div class=\"container\">"
+			}
+		},
+		{
+			"file": "login.php",
+			"settings":
+			{
+				"buffer_size": 1553,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "hist_1.php",
+			"settings":
+			{
+				"buffer_size": 4635,
+				"line_ending": "CR"
+			}
+		},
+		{
+			"file": "css/bootstrap.css",
+			"settings":
+			{
+				"buffer_size": 146082,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/css/custom/hist_custom.css",
+			"settings":
+			{
+				"buffer_size": 226,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "registro.php",
+			"settings":
+			{
+				"buffer_size": 3554,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/odontoiut/historia.php",
+			"settings":
+			{
+				"buffer_size": 11955,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib.php",
+			"settings":
+			{
+				"buffer_size": 1343,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/opt/lampp/htdocs/odontoiut2",
+		"/opt/lampp/htdocs/odontoiut2/css",
+		"/opt/lampp/htdocs/odontoiut2/src",
+		"/opt/lampp/htdocs/odontoiut2/src/css",
+		"/opt/lampp/htdocs/odontoiut2/src/css/custom"
+	],
+	"file_history":
+	[
+		"/opt/lampp/htdocs/odontoiut2/test.html",
+		"/opt/lampp/htdocs/odontoiut2/src/css/custom/registro_custom.css",
+		"/opt/lampp/htdocs/odontoiut2/hist_custom.css",
+		"/opt/lampp/htdocs/odontoiut2/src/css/bootstrap-datetimepicker.min.css",
+		"/opt/lampp/htdocs/odontoiut2/css/bootstrap-datetimepicker.min.css",
+		"/opt/lampp/htdocs/odontoiut2/src/css/bootstrap/bootstrap.css",
+		"/opt/lampp/htdocs/odontoiut2/css/bootstrap.css",
+		"/opt/lampp/htdocs/odontoiut2/enigma_rojas1.php",
+		"/opt/lampp/htdocs/odontoiut2/hist_1.php",
+		"/opt/lampp/htdocs/odontoiut2/src/js/bootstrap/bootstrap.min.js",
+		"/opt/lampp/htdocs/odontoiut2/src/js/jquery/jquery.min.js",
+		"/opt/lampp/htdocs/odontoiut2/src/css/bootstrap/bootstrap.min.css",
+		"/opt/lampp/htdocs/odontoiut2/src/css/bootstrap/bootstrap-theme.min.css",
+		"/opt/lampp/htdocs/odontoiut/historia.php",
+		"/opt/lampp/htdocs/odontoiut/index.php",
+		"/opt/lampp/htdocs/odontoiut/login.php",
+		"/opt/lampp/htdocs/odontoiut2/home.html",
+		"/opt/lampp/htdocs/odontoiut2/lib.php",
+		"/opt/lampp/htdocs/odontoiut2/testing.php",
+		"/opt/lampp/htdocs/odontoiut2/src/css/custom/index_custom.css",
+		"/home/jesusrojas/Descargas/mcomix-1.2.1/README",
+		"/home/jesusrojas/odontoiut2.sql",
+		"/home/jesusrojas/Descargas/bootstrap-3.3.6-dist.zip",
+		"/opt/lampp/htdocs/odontoiut2/odontoiut2.sublime-project",
+		"/opt/lampp/htdocs/odontoiut/registrar.php",
+		"/opt/lampp/htdocs/odontoiut/exit.php",
+		"/media/jesusrojas/OS/xampp/htdocs/odontoiut/libreria.php",
+		"/media/jesusrojas/OS/xampp/htdocs/web1/conex_test.php",
+		"/home/jesusrojas/Documentos/auditoria_inventario.sql",
+		"/tmp/mozilla_jesusrojas0/colegio_postgres.sql",
+		"/opt/lampp/properties.ini",
+		"/opt/lampp/lib/php/extensions/no-debug-non-zts-20151012/pgsql.so",
+		"/etc/php5/mods-available/pgsql.ini",
+		"/etc/php5/apache2/php.ini",
+		"/etc/php5/cli/php.ini",
+		"/etc/php5/apache2/conf.d/10-pdo.ini",
+		"/etc/php5/cli/conf.d/10-pdo.ini",
+		"/etc/php5/mods-available/pdo_mysql.ini",
+		"/etc/php5/apache2/conf.d/20-mysql.ini",
+		"/etc/php5/mods-available/pdo.ini",
+		"/home/jesusrojas/Documentos/python tests/testing.py",
+		"/home/jesusrojas/Documentos/python tests/BeautifulSoup_Test2.py",
+		"/home/jesusrojas/Documentos/python tests/BeautifulSoup_script.py",
+		"/home/jesusrojas/Descargas/documents-export-2016-05-19/BeautifulSoup_Test.py",
+		"/home/jesusrojas/Documentos/python tests/BeautifulSoup_Test.py",
+		"/home/jesusrojas/Documentos/python tests/holapy.py",
+		"/opt/lampp/htdocs/odontoiut/libreria.php",
+		"/tmp/mozilla_jesusrojas0/prueba-1.php",
+		"/tmp/mozilla_jesusrojas0/prueba.php",
+		"/etc/postgresql/9.3/main/pg_hba.conf",
+		"/etc/postgresql/9.3/main/ph_hba.conf",
+		"/etc/postgresql/9.3/main/postgresql.conf"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"line",
+			"input-g",
+			"add-on",
+			"font",
+			"tp_audi",
+			"tp_aud",
+			"src",
+			"src_qutn",
+			"src",
+			"scr",
+			"src_anw",
+			"src_qutn",
+			"control",
+			"class",
+			"form",
+			"\">\n",
+			"group",
+			"\n       ",
+			"top",
+			"create role",
+			"user",
+			"forgot",
+			"check",
+			"btn",
+			"show",
+			">\n",
+			"extension =",
+			"pgsql",
+			"extension",
+			"pgsql.SO",
+			"pgsql.",
+			"pgsql",
+			"post",
+			"psql",
+			"postgres",
+			"post",
+			"ps"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								252,
+								252
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div class=\"container\">",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1522,
+								1522
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 98.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "hist_1.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4635,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2168,
+								2168
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "css/bootstrap.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 146082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 51276.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/css/custom/hist_custom.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223,
+								223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "registro.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								685,
+								685
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 464.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/opt/lampp/htdocs/odontoiut/historia.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11955,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1359,
+								1359
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 308.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "lib.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1065,
+								1065
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 546.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.674045801527,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 185.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "odontoiut2.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/opt/lampp/htdocs/odontoiut2/odontoiut2.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

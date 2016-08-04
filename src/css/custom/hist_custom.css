@@ -1,0 +1,16 @@
+.trat_form{
+	overflow: auto; 
+	height: 600px; 
+/*	border: 2px solid red;*/
+}
+
+.rcorners1 {
+	border: 2px solid #84acea;
+    padding: 20px;
+    width: 200px;
+    height: 
+   	overflow: scroll;
+
+}
+
+select:invalid { color: gray; }
