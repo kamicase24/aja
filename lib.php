@@ -55,5 +55,31 @@ class Odontoiut2{
 			print "<option value='".$var[$a]."'>".$var[$b]."</option>";
 		}
 	}
+
+	function fecha_output($fecha){
+		return date_format(date_create($fecha),'d-m-Y');
+	}
+
+	function contraindicaciones(){
+		$db = new Database_pro; $con = $db->conecta(); $query = pg_query($con,"select * from contras");
+		$i = 0;
+		while ($var = pg_fetch_row($query)) {
+			$i++;
+			print '<label class="checkbox-inline">';
+			print '<input type="checkbox" value="'.$var[1].'" name=""/>'.$var[1];
+			print '</label>';
+			if($i==4){ print '<br>'; $i = 0;}
+		}
+	}
+
+	function inventario(){
+		$db = new Database_pro; $con = $db->conecta();
+		$query = pg_query($con, "select inventario.id_pro, producto.nom_pro, inventario.exis from producto, inventario where producto.id_pro = inventario.id_pro");
+		while ($var = pg_fetch_row($query)) {
+			print "<tr>
+					<td>".$var[0]."</td><td>".$var[1]."</td><td>".$var[2]."</td><td onclick='eliminar(".$var[0].")'>Eliminar</td>
+				</tr>";
+		}	
+	}
 }
 ?>

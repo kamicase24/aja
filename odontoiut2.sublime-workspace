@@ -4,8 +4,124 @@
 		"selected_items":
 		[
 			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"pa",
+				"placeholder	Attr"
+			],
+			[
+				"set",
+				"setAttribute"
+			],
+			[
+				"canv",
+				"canvas_data"
+			],
+			[
+				"test",
+				"test_canvas"
+			],
+			[
+				"colors",
+				"colors_sketch"
+			],
+			[
+				"sub",
+				"submit"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"b",
+				"bgcolor	Attr"
+			],
+			[
 				"s",
-				"style	Attr"
+				"script	Tag"
+			],
+			[
+				"input",
+				"input"
+			],
+			[
+				"pg_f",
+				"pg_fetch_row"
+			],
+			[
+				"fh_",
+				"fh_nac"
+			],
+			[
+				"fh",
+				"fh_trat"
+			],
+			[
+				"tit",
+				"tit_trat"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"bt",
+				"bt_sv"
+			],
+			[
+				"su",
+				"submit"
+			],
+			[
+				"dv",
+				"div1"
+			],
+			[
+				"colmd",
+				"col-md-6"
+			],
+			[
+				"colm",
+				"col-md-12"
+			],
+			[
+				"trat",
+				"trat_divb"
+			],
+			[
+				"trat_d",
+				"trat_divt"
+			],
+			[
+				"col",
+				"col-md-3"
+			],
+			[
+				"form-",
+				"form-inline"
+			],
+			[
+				"col-",
+				"col-md-6"
+			],
+			[
+				"trat_",
+				"trat_fh"
 			],
 			[
 				"btn",
@@ -26,10 +142,6 @@
 			[
 				"wi",
 				"width"
-			],
-			[
-				"col-",
-				"col-md-6"
 			],
 			[
 				"text",
@@ -132,10 +244,6 @@
 				"div	Tag"
 			],
 			[
-				"for",
-				"form	Tag"
-			],
-			[
 				"met",
 				"meta	Tag"
 			],
@@ -152,70 +260,45 @@
 	"buffers":
 	[
 		{
-			"file": "index.php",
+			"file": "test.php",
 			"settings":
 			{
-				"buffer_size": 1566,
-				"line_ending": "Unix",
-				"name": "<div class=\"container\">"
-			}
-		},
-		{
-			"file": "login.php",
-			"settings":
-			{
-				"buffer_size": 1553,
+				"buffer_size": 1608,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<?php\ninclude('lib.php')\n?>\n<!DOCTYPE html>\n<html lang=\"es\">\n	<head>\n		<title>\n			Odonto-IUT\n		</title>\n		<meta charset=\"utf-8\">\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"src/css/custom/hist_custom.css\">\n\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"src/css/bootstrap.css\">\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"src/css/bootstrap-datetimepicker.min.css\">\n		<script type=\"text/javascript\" src=\"src/js/bootstrap.min.js\"></script>\n		<script type=\"text/javascript\" src=\"src/js/jquery.min.js\"></script>\n		<script type=\"text/javascript\" src=\"src/js/bootstrap-datetimepicker.min.js\"></script>\n	</head>\n	<body>\n		<div class=\"container\">\n			<form>\n<!-- 				<div class=\"col-md-6\">\n					<h2 align=\"center \">\n						Paciente\n					</h2>\n				</div> -->\n				<!-- <div class=\"form-group col-md-12\"> -->\n					<div class=\"col-md-3\">\n						<br><input type=\"text\" name=\"nom_pac\" class=\"form-control\" placeholder=\"Nombre\" required>\n\n						<br><input type=\"text\" name=\"ape_pac\" class=\"form-control\" placeholder=\"Apellido\" required>\n\n						<br>\n						<div class=\"form-inline\">						\n							<select name=\"tp_ced\" class=\"form-control\" required>\n								<option value=\"\" disabled selected hidden> </option>\n								<option value=\"V-\">V</option>\n								<option value=\"E-\">E</option>\n							</select>\n							<input type=\"text\" name=\"ced_pac\" class=\"form-control\" placeholder=\"Cédula de Identidad\">\n						</div>\n\n						<span id=\"datetimepicker2\">\n							<br><span class=\"add-on\"><input type=\"text\" data-format=\"dd/MM/yyyy\" name=\"fh_nac\" class=\"form-control\" placeholder=\"Fecha de Nacimiento\" required=\"\"></span>\n						</span>\n\n						<br><input type=\"text\" name=\"edad\" class=\"form-control\" placeholder=\"Edad\" required>\n					</div>\n\n\n					<div class=\"col-md-3\">\n\n						<br><select name=\"gen\" class=\"form-control\" required>\n							<option value=\"\" disabled selected hidden> Género </option>\n							<option value=\"masculino\">Masculino</option>	\n							<option value=\"femenino\">Femenino</option>	\n						</select>\n\n						<br><input type=\"text\" name=\"tlf\" class=\"form-control\" placeholder=\"Teléfono\">\n\n						<br><input type=\"text\" name=\"direcc\" class=\"form-control\" placeholder=\"Dirección\">\n\n						<br><select name=\"esp\" class=\"form-control\" required>\n							<option value=\" \" disabled selected hidden>Especialidad</option>\n						<?php\n							$odontolib = new Odontoiut2;\n							$odontolib ->lista('especialidad',0,1);\n						?>\n						</select>\n						\n						<br><select name=\"tra\" class=\"form-control\" required>\n							<option value=\" \" disabled selected hidden>Trayecto</option>\n							<option value=\"I\">I</option>\n							<option value=\"II\">II</option>\n							<option value=\"III\">III</option>\n							<option value=\"IV\">IV</option>\n						</select>\n					</div>\n\n					<div class=\"col-md-6 trat_form\">\n						<br>\n						<input type=\"button\" value=\"Nuevo Tratamiento\" class=\"btn btn-default form-control\" id=\"nuevo_boton\"/>\n						<!-- <input type=\"button\" value=\"Vista Previa\" class=\"btn btn-default\" id=\"preview\" /> -->\n						<span class=\"\" id=\"nuevo_input\"></span>\n					</div>\n				<!-- </div> -->\n			</form>\n		<script type=\"text/javascript\">\n			$(document).ready(function()\n			{\n				$(\"#nuevo_boton\").click(function()\n				{\n					var contador = $(\"#nuevo_input div\").length + 1;\n\n					var input_wrapper = $('<div class=\"fieldwrapper\" id=\"field' + contador + '\"/>');\n\n					var trat_form = $('<br><div class=\"form-inline\"><input type=\"text\" name=\"fh_trat_'+contador+'\" class=\"form-control\" placeholder=\"Fecha\"/> <input type=\"text\" name=\"tit_trat_'+contador+'\" class=\"form-control\" placeholder=\"Tratamiento\"/> <input type=\"submit\" name=\"btn_trat\" class=\"btn btn-success form-control\" value=\"Guardar\"></div><br><textarea rows=\"3\" class=\"form-control\" name=\"trat_'+contador+'\" placeholder=\"Detalles del Tratamiento\"/></textarea>');\n					// var tit_trat = $('');\n\n					// var select = $('<br><select class=\"form-control\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>');\n					\n					var removeButton = $('<br><input type=\"button\" class=\"btn btn-warning form-control\" value=\"Eliminar Tratamiento\" />');\n					removeButton.click(function()\n					{\n						$(this).parent().remove();\n					});\n\n					input_wrapper.append(trat_form);\n					// input_wrapper.append(tit_trat);\n					// input_wrapper.append(trat);\n\n					// input_wrapper.append(select);\n					input_wrapper.append(removeButton);\n					\n					$(\"#nuevo_input\").append(input_wrapper);\n				});\n			});\n\n			$(function() {\n				$('#datetimepicker2').datetimepicker({\n					language: 'es',\n					pick12HourFormat: true\n				});\n			});\n		</script>\n	</body>\n</html>\n",
 			"file": "hist_1.php",
-			"file_size": 4653,
-			"file_write_time": 131148294523604212,
 			"settings":
 			{
-				"buffer_size": 4655,
+				"buffer_size": 8638,
 				"line_ending": "CR"
 			}
 		},
 		{
-			"file": "css/bootstrap.css",
+			"file": "inv_1.php",
 			"settings":
 			{
-				"buffer_size": 146082,
+				"buffer_size": 2648,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/css/custom/hist_custom.css",
+			"file": "src/js/sketch.js",
 			"settings":
 			{
-				"buffer_size": 226,
+				"buffer_size": 5492,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "registro.php",
-			"settings":
-			{
-				"buffer_size": 3554,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/opt/lampp/htdocs/odontoiut/historia.php",
-			"settings":
-			{
-				"buffer_size": 11955,
-				"line_ending": "Windows"
-			}
-		},
-		{
+			"contents": "<?php\nclass Database_pro{\n	function conecta(){\n	$con = pg_pconnect(\"host=localhost port=5432 dbname=odontoiut2 password=1234 user=jesusrojas\");\n	return $con;\n	}\n}\n\n\nclass Enigma_rojas1{\n	private $clave;\n		function __construct($clave){\n		$this->clave=$clave;\n	}\n\n	function cifrar($texto){\n\n		$resultado='';\n		for($i=0;$i<strlen($texto);$i++){\n\n		$caracter=substr($texto, $i,1);\n		$caracterClave=substr($this->clave, ($i%strlen($this->clave))-1,1);\n		$caracter=chr(ord($caracter)+ord($caracterClave));\n		$resultado.=$caracter;\n		}\n		return base64_encode($resultado);\n	}\n\n	function descifrar($texto){\n		$resultado='';\n		$texto=base64_decode($texto);\n		for($i=0;$i<strlen($texto);$i++){\n\n		$caracter=substr($texto, $i,1);\n		$caracterClave=substr($this->clave, ($i%strlen($this->clave))-1,1);\n		$caracter=chr(ord($caracter)-ord($caracterClave));\n		$resultado.=$caracter;\n		}\n		return $resultado;\n	}\n}\n\nclass Odontoiut2{\n	function redireccion($page,$alert){\n		$regreso = \"<script type='text/javascript'>	window.alert('\".$alert.\"'); window.location='\".$page.\"';	</script>\";\n		return $regreso;\n	}\n\n	function lista($tabla,int $a,int $b){\n		$db = new Database_pro();	$con = $db->conecta();\n\n		$cmd = pg_query($con,\"select * from $tabla\");\n		while ($var = pg_fetch_row($cmd))\n		{\n			print \"<option value='\".$var[$a].\"'>\".$var[$b].\"</option>\";\n		}\n	}\n\n	function fecha_output($fecha){\n		return date_format(date_create($fecha),'d-m-Y');\n	}\n\n	function contraindicaciones(){\n		$db = new Database_pro; $con = $db->conecta(); $query = pg_query($con,\"select * from contras\");\n		$i = 0;\n		while ($var = pg_fetch_row($query)) {\n			$i++;\n			print '<label class=\"checkbox-inline\">';\n			print '<input type=\"checkbox\" value=\"'.$var[1].'\" name=\"\"/>'.$var[1];\n			print '</label>';\n			if($i==4){ print '<br>'; $i = 0;}\n		}\n	}\n\n	function \n}\n?>",
 			"file": "lib.php",
+			"file_size": 1802,
+			"file_write_time": 131155889118863692,
 			"settings":
 			{
-				"buffer_size": 1343,
+				"buffer_size": 1814,
 				"line_ending": "Unix"
 			}
 		}
@@ -270,31 +353,38 @@
 	"expanded_folders":
 	[
 		"/opt/lampp/htdocs/odontoiut2",
-		"/opt/lampp/htdocs/odontoiut2/css",
 		"/opt/lampp/htdocs/odontoiut2/src",
-		"/opt/lampp/htdocs/odontoiut2/src/css",
-		"/opt/lampp/htdocs/odontoiut2/src/css/custom"
+		"/opt/lampp/htdocs/odontoiut2/src/js"
 	],
 	"file_history":
 	[
+		"/opt/lampp/htdocs/odontoiut2/login.php",
+		"/opt/lampp/htdocs/odontoiut2/index.php",
+		"/opt/lampp/htdocs/odontoiut/historia.php",
+		"/opt/lampp/htdocs/odontoiut/js/funciones.js",
+		"/opt/lampp/htdocs/odontoiut/js/flotante.js",
+		"/opt/lampp/htdocs/odontoiut2/js/sketch.js",
+		"/opt/lampp/htdocs/odontoiut2/css/bootstrap.css",
+		"/opt/lampp/htdocs/odontoiut2/lib.php",
+		"/opt/lampp/htdocs/odontoiut2/src/css/custom/hist_custom.css",
+		"/opt/lampp/htdocs/odontoiut2/test.php",
+		"/opt/lampp/htdocs/odontoiut2/registro.php",
+		"/opt/lampp/htdocs/odontoiut/libreria.php",
 		"/opt/lampp/htdocs/odontoiut2/test.html",
 		"/opt/lampp/htdocs/odontoiut2/src/css/custom/registro_custom.css",
 		"/opt/lampp/htdocs/odontoiut2/hist_custom.css",
 		"/opt/lampp/htdocs/odontoiut2/src/css/bootstrap-datetimepicker.min.css",
 		"/opt/lampp/htdocs/odontoiut2/css/bootstrap-datetimepicker.min.css",
 		"/opt/lampp/htdocs/odontoiut2/src/css/bootstrap/bootstrap.css",
-		"/opt/lampp/htdocs/odontoiut2/css/bootstrap.css",
 		"/opt/lampp/htdocs/odontoiut2/enigma_rojas1.php",
 		"/opt/lampp/htdocs/odontoiut2/hist_1.php",
 		"/opt/lampp/htdocs/odontoiut2/src/js/bootstrap/bootstrap.min.js",
 		"/opt/lampp/htdocs/odontoiut2/src/js/jquery/jquery.min.js",
 		"/opt/lampp/htdocs/odontoiut2/src/css/bootstrap/bootstrap.min.css",
 		"/opt/lampp/htdocs/odontoiut2/src/css/bootstrap/bootstrap-theme.min.css",
-		"/opt/lampp/htdocs/odontoiut/historia.php",
 		"/opt/lampp/htdocs/odontoiut/index.php",
 		"/opt/lampp/htdocs/odontoiut/login.php",
 		"/opt/lampp/htdocs/odontoiut2/home.html",
-		"/opt/lampp/htdocs/odontoiut2/lib.php",
 		"/opt/lampp/htdocs/odontoiut2/testing.php",
 		"/opt/lampp/htdocs/odontoiut2/src/css/custom/index_custom.css",
 		"/home/jesusrojas/Descargas/mcomix-1.2.1/README",
@@ -323,7 +413,6 @@
 		"/home/jesusrojas/Descargas/documents-export-2016-05-19/BeautifulSoup_Test.py",
 		"/home/jesusrojas/Documentos/python tests/BeautifulSoup_Test.py",
 		"/home/jesusrojas/Documentos/python tests/holapy.py",
-		"/opt/lampp/htdocs/odontoiut/libreria.php",
 		"/tmp/mozilla_jesusrojas0/prueba-1.php",
 		"/tmp/mozilla_jesusrojas0/prueba.php",
 		"/etc/postgresql/9.3/main/pg_hba.conf",
@@ -346,6 +435,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"center",
+			"guardar",
+			"download",
+			"Sketch(",
+			"checkbox[]",
+			"cedula",
 			"line",
 			"input-g",
 			"add-on",
@@ -405,55 +500,119 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.php",
+					"file": "test.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1566,
+						"buffer_size": 1608,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								252,
-								252
+								681,
+								681
 							]
 						],
 						"settings":
 						{
-							"auto_name": "<div class=\"container\">",
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
+							"tab_size": 3,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 336.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "hist_1.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8638,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3295,
+								3295
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 155.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "login.php",
+					"buffer": 2,
+					"file": "inv_1.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1553,
+						"buffer_size": 2648,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1538,
-								1538
+								2239,
+								2239
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 854.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "src/js/sketch.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								345,
+								345
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 3,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -464,172 +623,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "hist_1.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4655,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4392,
-								4392
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1386.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 4,
-			"sheets":
-			[
-				{
-					"buffer": 3,
-					"file": "css/bootstrap.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 146082,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 51276.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
 					"buffer": 4,
-					"file": "src/css/custom/hist_custom.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								90,
-								90
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "registro.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3554,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								685,
-								685
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 156.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/opt/lampp/htdocs/odontoiut/historia.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11955,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1359,
-								1359
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 252.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "lib.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1343,
+						"buffer_size": 1814,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1020,
-								1020
+								1809,
+								1809
 							]
 						],
 						"settings":
@@ -638,10 +645,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 8708.0,
+						"translation.y": 685.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -649,7 +656,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -675,7 +682,7 @@
 		"cols":
 		[
 			0.0,
-			0.961832061069,
+			0.650381679389,
 			1.0
 		],
 		"rows":
