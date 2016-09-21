@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/opt/lampp/htdocs/modal_test"
 		}
 	]
 }

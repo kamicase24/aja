@@ -1,4 +1,4 @@
-var __slice = Array.prototype.slice;
+ var __slice = Array.prototype.slice;
 (function($) {
 	var Sketch;
 	$.fn.sketch = function() {
@@ -76,13 +76,16 @@ var __slice = Array.prototype.slice;
 			// return window.open(this.el.toDataURL(mime));
 			// modificado
 			var result_1 = this.el.toDataURL(mime);
-			var x = document.createElement("INPUT");
-			x.setAttribute("type","text");
-			x.setAttribute("value",result_1);
-			x.setAttribute("hidden",true);
-			x.setAttribute("name","3");
-			document.getElementById("form1").appendChild(x);
-			return window.alert('Cambios guardados');
+			var dataString = '1=' + result_1;
+
+			$.ajax
+			// var x = document.createElement("INPUT");
+			// x.setAttribute("type","text");
+			// x.setAttribute("value",result_1);
+			// x.setAttribute("hidden",false);
+			// x.setAttribute("name","3");
+			// document.getElementById("form1").appendChild(x);
+			// return window.alert('Cambios guardados'+dataString);
 		};
 		Sketch.prototype.set = function(key, value) {
 			this[key] = value;

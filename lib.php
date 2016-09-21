@@ -71,15 +71,6 @@ class Odontoiut2{
 			if($i==4){ print '<br>'; $i = 0;}
 		}
 	}
-
-	function inventario(){
-		$db = new Database_pro; $con = $db->conecta();
-		$query = pg_query($con, "select inventario.id_pro, producto.nom_pro, inventario.exis from producto, inventario where producto.id_pro = inventario.id_pro");
-		while ($var = pg_fetch_row($query)) {
-			print "<tr>
-					<td>".$var[0]."</td><td>".$var[1]."</td><td>".$var[2]."</td><td onclick='eliminar(".$var[0].")'>Eliminar</td>
-				</tr>";
-		}	
-	}
 }
+
 ?>

@@ -4,6 +4,146 @@
 		"selected_items":
 		[
 			[
+				"id_",
+				"id_med"
+			],
+			[
+				"pr",
+				"producto"
+			],
+			[
+				"modal_",
+				"modal_modificar"
+			],
+			[
+				"onC",
+				"onclick	Attr"
+			],
+			[
+				"btn-",
+				"btn-aceptar"
+			],
+			[
+				"lef",
+				"text-left 	Bootstrap 3 Class"
+			],
+			[
+				"eli",
+				"elimitar-modal"
+			],
+			[
+				"modal-",
+				"modal-footer 	Bootstrap 3 Class"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"f",
+				"form-group 	Bootstrap 3 Class"
+			],
+			[
+				"form",
+				"form-inline 	Bootstrap 3 Class"
+			],
+			[
+				"btn",
+				"btn-info 	Bootstrap 3 Class"
+			],
+			[
+				"btn-s",
+				"btn-success 	Bootstrap 3 Class"
+			],
+			[
+				"id",
+				"id_med"
+			],
+			[
+				"for",
+				"form	<form>"
+			],
+			[
+				"modificar",
+				"modificar-modal-body"
+			],
+			[
+				"div",
+				"div-results"
+			],
+			[
+				"data",
+				"data	.data()"
+			],
+			[
+				"inv",
+				"inv_1"
+			],
+			[
+				"re",
+				"ready	$(document).ready"
+			],
+			[
+				"w",
+				"while	while …"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"glyphicon-tr",
+				"glyphicon-trash 	Bootstrap 3 Class"
+			],
+			[
+				"data-",
+				"data-target"
+			],
+			[
+				"text",
+				"text-right 	Bootstrap 3 Class"
+			],
+			[
+				"col-m",
+				"col-md-12 	Bootstrap 3 Class"
+			],
+			[
+				"container",
+				"container-fluid 	Bootstrap 3 Class"
+			],
+			[
+				"on",
+				"onclick"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"gl",
+				"glyphicon-plus 	Bootstrap 3 Class"
+			],
+			[
+				"g",
+				"glyphicon 	Bootstrap 3 Class"
+			],
+			[
+				"que",
+				"query"
+			],
+			[
+				"id_pro",
+				"id_pro"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"no",
+				"nom_pro"
+			],
+			[
 				"c",
 				"class	Attr"
 			],
@@ -30,10 +170,6 @@
 			[
 				"sub",
 				"submit"
-			],
-			[
-				"for",
-				"foreach	foreach …"
 			],
 			[
 				"h",
@@ -124,14 +260,6 @@
 				"trat_fh"
 			],
 			[
-				"btn",
-				"btn-default"
-			],
-			[
-				"form",
-				"form-control"
-			],
-			[
 				"tart_",
 				"trat_form"
 			],
@@ -142,10 +270,6 @@
 			[
 				"wi",
 				"width"
-			],
-			[
-				"text",
-				"textarea"
 			],
 			[
 				"p",
@@ -170,10 +294,6 @@
 			[
 				"fu",
 				"function"
-			],
-			[
-				"_",
-				"_SESSION"
 			],
 			[
 				"gett",
@@ -212,10 +332,6 @@
 				"pw_user"
 			],
 			[
-				"pr",
-				"print"
-			],
-			[
 				"in",
 				"input	Tag"
 			],
@@ -230,10 +346,6 @@
 			[
 				"te",
 				"texto_codificado"
-			],
-			[
-				"d",
-				"div	Tag"
 			],
 			[
 				"pg_fetch_",
@@ -260,52 +372,92 @@
 	"buffers":
 	[
 		{
+			"file": "/opt/lampp/htdocs/modal_test/js/app.js",
+			"settings":
+			{
+				"buffer_size": 3021,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/modal_test/js/paises_ajax.php",
+			"settings":
+			{
+				"buffer_size": 2887,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib.php",
+			"settings":
+			{
+				"buffer_size": 1803,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "1.php",
+			"settings":
+			{
+				"buffer_size": 2582,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "test.php",
 			"settings":
 			{
-				"buffer_size": 1608,
+				"buffer_size": 1773,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "hist_1.php",
+			"file": "2.php",
 			"settings":
 			{
-				"buffer_size": 8638,
-				"line_ending": "CR"
+				"buffer_size": 802,
+				"line_ending": "Unix"
 			}
 		},
 		{
+			"contents": "<?php\ninclude('lib.php')\n?>\n<!DOCTYPE html>\n<html lang=\"es\">\n	<head>\n		<title>\n			Odonto-IUT\n		</title>\n		<meta charset=\"utf-8\">\n		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"src/css/bootstrap.css\">\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"src/css/custom/inv_custom.css\">\n		<script type=\"text/javascript\" src=\"src/js/jquery.min.js\"></script>\n		<script type=\"text/javascript\" src=\"src/js/bootstrap.min.js\"></script>\n		<script>\n			function eliminar(puntero){\n				modal_eliminar.style.display = \"block\";\n				h_input = document.createElement(\"input\");\n				h_input.setAttribute(\"type\",\"text\");\n				h_input.setAttribute(\"value\",puntero);\n				h_input.setAttribute(\"hidden\",true);\n				h_input.setAttribute(\"id\",\"puntero\");\n				document.getElementById(\"eliminar-modal-body\").appendChild(h_input);\n			}\n			function eliminar_aceptar(){\n					var puntero = $(\"input#puntero\").val();\n					var parametros = {\"action\":\"eliminar\",\"puntero\":puntero};\n					$.ajax({\n						type: \"POST\",\n						url: \"1.php\",\n						data: parametros,\n						success: function(a) {\n							window.location=\"inv_1.php\";\n						}\n					});\n				}\n			\n			function modificar(puntero){\n				var parametros = {\"action\":\"ajax\",\"puntero\":puntero};\n				$.ajax({\n					type: \"POST\",\n					url: \"1.php\",\n					data: parametros,\n					success: function(a) {\n						$('#modificar-modal-body').html(a);\n					}\n				});\n				modal.style.display = \"block\";\n			}\n\n			function modificar_submit(){\n\n				var id_pro = $(\"input#id_pro\").val();\n				var nom_pro = $(\"input#nom_pro\").val();\n				var det_pro = $(\"input#det_pro\").val();\n				var id_med = $(\"select#med option:selected\").val();\n				var parametros = {\"action\":\"modificar\",\n								  \"nom_pro\":nom_pro,\n								  \"det_pro\":det_pro,\n								  \"id_med\" :id_med};\n				// $.ajax({\n				// 	type: \"POST\",\n				// 	url: \"1.php\",\n				// 	data: parametros,\n				// 	success: function(a) {\n				// 		window.alert(a);\n				// 	}\n				// });\n				window.alert(id_pro);\n			}\n\n			function agregar(){\n				modal_agregar.style.display = \"block\";\n			}\n\n			function cerrar_agregar(){\n				modal_agregar.style.display = \"none\";\n			}\n			function cerrar_modificar(){\n				modal.style.display = \"none\";\n			}\n			function cerrar_eliminar(){\n				modal_eliminar.style.display = \"none\";\n			}\n\n			window.onclick = function(event) {\n				if (event.target == modal) {\n					modal.style.display = \"none\";\n				}\n				if (event.target == modal_agregar) {\n					modal_agregar.style.display = \"none\";\n				}\n				if (event.target == modal_eliminar) {\n					modal_eliminar.style.display = \"none\";\n				}\n			}\n		</script>\n	</head>\n<body>\n	<!-- navbar -->\n	<nav class=\"navbar navbar-inverse\">\n		<div class=\"container-fluid\">\n			<div class=\"navbar-header\">\n				<a class=\"navbar-brand\" href=\"#\">Odontoiut 2.0</a>\n			</div>\n			<ul class=\"nav navbar-nav\">\n				<li class=\"active\"><a href=\"#\">Tablero</a></li>\n				<li class=\"dropdown\">\n					<a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Historias<span class=\"caret\"></span></a>\n					<ul class=\"dropdown-menu\">\n						<li><a href=\"#\">Page 1-1</a></li>\n						<li><a href=\"#\">Page 1-2</a></li>\n						<li><a href=\"#\">Page 1-3</a></li>\n					</ul>\n				</li>\n				<li><a href=\"#\">Citas</a></li>\n				<li><a href=\"#\">Otras cosas</a></li>\n				<li class=\"dropdown\">\n					<a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Page 1\n					<span class=\"caret\"></span></a>\n					<ul class=\"dropdown-menu\">\n						<li><a href=\"#\">Page 1-1</a></li>\n						<li><a href=\"#\">Page 1-2</a></li>\n						<li><a href=\"#\">Page 1-3</a></li>\n					</ul>\n				</li>\n			</ul>\n		</div>\n	</nav>\n\n	<!-- MODAL MODIFICAR PRODUCTO -->\n	<div id=\"modificar-modal\" class=\"modal\">\n		<div class=\"modal-content\">\n			<form id=\"modificar-modal-form\" method=\"post\" action=\"inv_1.php\" class=\"form-inline\">\n			<div class=\"modal-header\">\n				<span onclick=\"cerrar_modificar()\" class=\"close\">×</span>\n				<h2>Modificar Producto</h2>\n			</div>\n			<div class=\"modal-body\" id=\"modificar-modal-body\">				\n			</div>\n			<div class=\"modal-footer\">\n				<button class=\"btn btn-primary form-control btn-sm\" onclick=\"modificar_submit()\">Guardar Cambios</button>\n			</div>\n			</form>\n		</div>\n	</div>\n\n	<!-- MODAL ELIMINAR -->\n	<div id=\"elimitar-modal\" class=\"modal\">\n		<form>\n		<div class=\"modal-dialog\">\n			<div class=\"modal-content\">\n			<div class=\"modal-header\" id=\"eliminar-modal-body\">\n				<span onclick=\"cerrar_eliminar()\" class=\"close\">×</span>\n				<h3>Esta seguro?</h3>\n			</div>\n				<p class=\"lead text-muted text-center\" style=\"display: block;margin:10px\">Esta acción eliminará de forma permanente el registro. Desea continuar?</p>\n			<div class=\"modal-footer\">\n				<button type=\"button\" class=\"btn btn-default btn-sm\" onclick=\"cerrar_eliminar()\">Cancelar</button>\n				<button type=\"button\" class=\"btn btn-primary btn-sm\" onclick=\"eliminar_aceptar()\">Aceptar</button>\n			</div>\n			</div>\n		</div>\n		</form>\n	</div>\n\n	<!-- MODAL AGREGAR PRODUCTO -->\n	<div id=\"agregar-modal\" class=\"modal\">\n		<div class=\"modal-content\">\n			<form action=\"inv_1.php\" method=\"post\" class=\"form-inline\">\n			<div class=\"modal-header\">\n				<span onclick=\"cerrar_agregar()\" class=\"close\">×</span>\n				<h2>Nuevo producto</h2>\n			</div>\n			<div class=\"modal-body\">\n					<input type=\"text\" name=\"nom_pro\" placeholder=\"Producto\" class=\"form-control\">\n					<input type=\"text\" name=\"det_pro\" placeholder=\"Detalle\" class=\"form-control\">\n					<select name=\"med\" class=\"form-control\">\n						<option value=\"1\">Ml.</option>\n					</select>\n			</div>\n			<div class=\"modal-footer\">\n				<input type=\"submit\" name=\"bt_pro\" class=\"btn btn-primary form-control btn-sm\" value=\"Nuevo\">\n			</div>\n			</form>\n		</div>\n	</div>\n\n	<div class=\"container\">\n		<div class=\"col-md-6\">\n			<h3 id=\"id_pro\">Lista de Productos</h3>\n		</div>\n		<div class=\"col-md-6\">\n			<h3 class=\"text-right\">\n			<button\n				onclick=\"agregar()\"\n				id=\"btn-modal-agregar\"\n				type=\"button\"\n				class=\"btn btn-default btn-sm\">\n				<span class=\"glyphicon glyphicon-plus\" aria-hidden=\"true\"></span> Agregar\n			</button>\n			</h3>\n		</div>\n\n		<div class=\"col-md-12\">\n			<table id=\"tabla1\" class=\"table table-bordered\">\n				<thead>\n					<th>#</th>\n					<th>Producto</th>\n					<th>Detalle</th>\n					<th>Medida</th>\n					<th></th>\n				</thead>\n				<?php\n					// Muestra\n					// $odontolib = new Odontoiut2;\n					// $odontolib -> producto();\n					$db = new Database_pro; $con = $db->conecta();\n					$query = pg_query($con, \"select id_pro, nom_pro, det_pro, medida.med from producto, medida order by id_pro\");\n					while ($var = pg_fetch_row($query)) {\n						?>\n						<tbody>\n							<td><?php print $var[0]; ?></td>\n							<td><?php print $var[1]; ?></td>\n							<td><?php print $var[2]; ?></td>\n							<td><?php print $var[3]; ?></td>\n							<td>\n							<button\n								type=\"button\"\n								class=\"btn btn-primary\"\n								onclick=\"modificar('<?php print $var[0]; ?>')\"\n								id=\"btn-modal-modificar\"\n							>\n								<span class=\"glyphicon glyphicon-pencil\" aria-hidden=\"true\"></span> Modificar\n							</button>\n							<button\n								type=\"button\"\n								class=\"btn btn-danger btn-sm\"\n								onclick=\"eliminar('<?php print $var[0]; ?>')\"\n							>\n							<span class=\"glyphicon glyphicon-trash\"></span>\n							</button>\n							</td>\n						</tbody>\n						<?php\n					}\n				?>\n			</table>\n		</div>\n		<div class=\"row\">\n			<?php\n				// Agrega\n				if (isset($_POST['bt_pro'])) {\n\n					$nom_pro = $_POST['nom_pro']; $det_pro = $_POST['det_pro'];\n					$med 	 = $_POST['med'];\n\n					$db = new Database_pro; $con = $db->conecta();\n\n					$sql = \"INSERT INTO producto(nom_pro,det_pro,med) VALUES ('$nom_pro', '$det_pro',$med)\";\n					$query = pg_query($con, $sql);\n\n					$odontolib = new Odontoiut2;\n					print $odontolib->redireccion('inv_1.php','Guardado Exitosamente');\n				}\n			?>\n			<script>\n				var modal_agregar = document.getElementById(\"agregar-modal\");\n				var modal = document.getElementById(\"modificar-modal\");\n				var modal_eliminar = document.getElementById(\"elimitar-modal\");\n			</script>\n		</div>\n	</div>\n</body>",
 			"file": "inv_1.php",
+			"file_size": 8049,
+			"file_write_time": 131187240415991186,
 			"settings":
 			{
-				"buffer_size": 2648,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/js/sketch.js",
-			"settings":
-			{
-				"buffer_size": 5492,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\nclass Database_pro{\n	function conecta(){\n	$con = pg_pconnect(\"host=localhost port=5432 dbname=odontoiut2 password=1234 user=jesusrojas\");\n	return $con;\n	}\n}\n\n\nclass Enigma_rojas1{\n	private $clave;\n		function __construct($clave){\n		$this->clave=$clave;\n	}\n\n	function cifrar($texto){\n\n		$resultado='';\n		for($i=0;$i<strlen($texto);$i++){\n\n		$caracter=substr($texto, $i,1);\n		$caracterClave=substr($this->clave, ($i%strlen($this->clave))-1,1);\n		$caracter=chr(ord($caracter)+ord($caracterClave));\n		$resultado.=$caracter;\n		}\n		return base64_encode($resultado);\n	}\n\n	function descifrar($texto){\n		$resultado='';\n		$texto=base64_decode($texto);\n		for($i=0;$i<strlen($texto);$i++){\n\n		$caracter=substr($texto, $i,1);\n		$caracterClave=substr($this->clave, ($i%strlen($this->clave))-1,1);\n		$caracter=chr(ord($caracter)-ord($caracterClave));\n		$resultado.=$caracter;\n		}\n		return $resultado;\n	}\n}\n\nclass Odontoiut2{\n	function redireccion($page,$alert){\n		$regreso = \"<script type='text/javascript'>	window.alert('\".$alert.\"'); window.location='\".$page.\"';	</script>\";\n		return $regreso;\n	}\n\n	function lista($tabla,int $a,int $b){\n		$db = new Database_pro();	$con = $db->conecta();\n\n		$cmd = pg_query($con,\"select * from $tabla\");\n		while ($var = pg_fetch_row($cmd))\n		{\n			print \"<option value='\".$var[$a].\"'>\".$var[$b].\"</option>\";\n		}\n	}\n\n	function fecha_output($fecha){\n		return date_format(date_create($fecha),'d-m-Y');\n	}\n\n	function contraindicaciones(){\n		$db = new Database_pro; $con = $db->conecta(); $query = pg_query($con,\"select * from contras\");\n		$i = 0;\n		while ($var = pg_fetch_row($query)) {\n			$i++;\n			print '<label class=\"checkbox-inline\">';\n			print '<input type=\"checkbox\" value=\"'.$var[1].'\" name=\"\"/>'.$var[1];\n			print '</label>';\n			if($i==4){ print '<br>'; $i = 0;}\n		}\n	}\n\n	function \n}\n?>",
-			"file": "lib.php",
-			"file_size": 1802,
-			"file_write_time": 131155889118863692,
-			"settings":
-			{
-				"buffer_size": 1814,
+				"buffer_size": 8045,
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system": "Packages/Default/Syntax Tests.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					""
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"All Syntaxes"
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"Performance"
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"Regex Compatibility"
+				]
+			],
+			[
+				"Packages/Default/Syntax Tests.sublime-build",
+				"All Syntaxes"
+			]
+		],
 		[
 			[
 				[
@@ -327,9 +479,25 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "",
+		"last_filter": "pack",
 		"selected_items":
 		[
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"control",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"packe",
+				"Package Control: Install Package"
+			]
 		],
 		"width": 575.0
 	},
@@ -352,12 +520,29 @@
 	},
 	"expanded_folders":
 	[
-		"/opt/lampp/htdocs/odontoiut2",
-		"/opt/lampp/htdocs/odontoiut2/src",
-		"/opt/lampp/htdocs/odontoiut2/src/js"
+		"/opt/lampp/htdocs/odontoiut2"
 	],
 	"file_history":
 	[
+		"/opt/lampp/htdocs/modal_test/modal_eliminar.php",
+		"/opt/lampp/htdocs/modal_test/modal_modificar.php",
+		"/opt/lampp/htdocs/modal_test/index.php",
+		"/opt/lampp/htdocs/odontoiut2/src/js/2.php",
+		"/opt/lampp/htdocs/odontoiut2/test2.php",
+		"/opt/lampp/htdocs/odontoiut2/1.php",
+		"/opt/lampp/htdocs/odontoiut2/test.php",
+		"/opt/lampp/htdocs/odontoiut2/hist_1.php",
+		"/opt/lampp/htdocs/odontoiut2/src/js/sketch.js",
+		"/opt/lampp/htdocs/modal_test/modal_agregar.php",
+		"/opt/lampp/htdocs/modal_test/js/app.js",
+		"/opt/lampp/htdocs/odontoiut2/odontoiut2.sublime-project",
+		"/opt/lampp/htdocs/odontoiut2/src/css/custom/inv_custom.css",
+		"/opt/lampp/htdocs/odontoiut2/registro.php",
+		"/home/jesusrojas/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/jesusrojas/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/jesusrojas/.config/sublime-text-3/Packages/User/PHP.sublime-settings",
+		"/opt/lampp/htdocs/odontoiut2/lib.php",
+		"/opt/lampp/htdocs/odontoiut2/inv_1.php",
 		"/opt/lampp/htdocs/odontoiut2/login.php",
 		"/opt/lampp/htdocs/odontoiut2/index.php",
 		"/opt/lampp/htdocs/odontoiut/historia.php",
@@ -365,10 +550,7 @@
 		"/opt/lampp/htdocs/odontoiut/js/flotante.js",
 		"/opt/lampp/htdocs/odontoiut2/js/sketch.js",
 		"/opt/lampp/htdocs/odontoiut2/css/bootstrap.css",
-		"/opt/lampp/htdocs/odontoiut2/lib.php",
 		"/opt/lampp/htdocs/odontoiut2/src/css/custom/hist_custom.css",
-		"/opt/lampp/htdocs/odontoiut2/test.php",
-		"/opt/lampp/htdocs/odontoiut2/registro.php",
 		"/opt/lampp/htdocs/odontoiut/libreria.php",
 		"/opt/lampp/htdocs/odontoiut2/test.html",
 		"/opt/lampp/htdocs/odontoiut2/src/css/custom/registro_custom.css",
@@ -377,7 +559,6 @@
 		"/opt/lampp/htdocs/odontoiut2/css/bootstrap-datetimepicker.min.css",
 		"/opt/lampp/htdocs/odontoiut2/src/css/bootstrap/bootstrap.css",
 		"/opt/lampp/htdocs/odontoiut2/enigma_rojas1.php",
-		"/opt/lampp/htdocs/odontoiut2/hist_1.php",
 		"/opt/lampp/htdocs/odontoiut2/src/js/bootstrap/bootstrap.min.js",
 		"/opt/lampp/htdocs/odontoiut2/src/js/jquery/jquery.min.js",
 		"/opt/lampp/htdocs/odontoiut2/src/css/bootstrap/bootstrap.min.css",
@@ -390,7 +571,6 @@
 		"/home/jesusrojas/Descargas/mcomix-1.2.1/README",
 		"/home/jesusrojas/odontoiut2.sql",
 		"/home/jesusrojas/Descargas/bootstrap-3.3.6-dist.zip",
-		"/opt/lampp/htdocs/odontoiut2/odontoiut2.sublime-project",
 		"/opt/lampp/htdocs/odontoiut/registrar.php",
 		"/opt/lampp/htdocs/odontoiut/exit.php",
 		"/media/jesusrojas/OS/xampp/htdocs/odontoiut/libreria.php",
@@ -435,6 +615,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"alert",
+			"show",
+			"dataUpdat",
+			"dataUpdate",
+			"loader",
+			"insert",
+			"redirecc",
+			"res",
 			"center",
 			"guardar",
 			"download",
@@ -495,84 +683,111 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "test.php",
+					"file": "/opt/lampp/htdocs/modal_test/js/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1608,
+						"buffer_size": 3021,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								681,
-								681
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/opt/lampp/htdocs/modal_test/js/paises_ajax.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2887,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								611,
+								611
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 3,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1797,
+								1797
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 487.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "hist_1.php",
+					"buffer": 3,
+					"file": "1.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8638,
+						"buffer_size": 2582,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3295,
-								3295
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 155.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "inv_1.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2648,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2239,
-								2239
+								894,
+								894
 							]
 						],
 						"settings":
@@ -580,10 +795,67 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 854.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "test.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "2.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 802,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								394,
+								394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -593,50 +865,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 3,
-					"file": "src/js/sketch.js",
+					"buffer": 6,
+					"file": "inv_1.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5492,
+						"buffer_size": 8045,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								345,
-								345
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "lib.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1814,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1809,
-								1809
+								1530,
+								1530
 							]
 						],
 						"settings":
@@ -644,11 +886,11 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 685.0,
+						"translation.x": 3.0,
+						"translation.y": 546.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -682,7 +924,7 @@
 		"cols":
 		[
 			0.0,
-			0.650381679389,
+			0.579176623742,
 			1.0
 		],
 		"rows":
@@ -700,11 +942,11 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
+	"pinned_build_system": "Packages/Default/Syntax Tests.sublime-build",
 	"project": "odontoiut2.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
