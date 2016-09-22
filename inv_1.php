@@ -13,7 +13,7 @@ include('lib.php')
 		<link rel="stylesheet" type="text/css" href="src/css/custom/inv_custom.css">
 		<script type="text/javascript" src="src/js/jquery.min.js"></script>
 		<script type="text/javascript" src="src/js/bootstrap.min.js"></script>
-		<script>
+<!-- 		<script>
 			function eliminar(puntero){
 				modal_eliminar.style.display = "block";
 				h_input = document.createElement("input");
@@ -35,7 +35,6 @@ include('lib.php')
 						}
 					});
 				}
-			
 			function modificar(puntero){
 				var parametros = {"action":"ajax","puntero":puntero};
 				$.ajax({
@@ -48,31 +47,29 @@ include('lib.php')
 				});
 				modal.style.display = "block";
 			}
-
 			function modificar_submit(){
-				var id_pro = $("input$id_pro").val();
+
+				var id_pro = $("input#id_pro").val();
 				var nom_pro = $("input#nom_pro").val();
 				var det_pro = $("input#det_pro").val();
 				var id_med = $("select#med option:selected").val();
 				var parametros = {"action":"modificar",
+								  "id_pro":id_pro,
 								  "nom_pro":nom_pro,
 								  "det_pro":det_pro,
 								  "id_med" :id_med};
-				// $.ajax({
-				// 	type: "POST",
-				// 	url: "1.php",
-				// 	data: parametros,
-				// 	success: function(a) {
-				// 		window.alert(a);
-				// 	}
-				// });
-				window.alert(id_pro);
+				$.ajax({
+					type: "POST",
+					url: "1.php",
+					data: parametros,
+					success: function(a) {
+						window.location="inv_1.php"
+					}
+				});
 			}
-
 			function agregar(){
 				modal_agregar.style.display = "block";
 			}
-
 			function cerrar_agregar(){
 				modal_agregar.style.display = "none";
 			}
@@ -82,7 +79,6 @@ include('lib.php')
 			function cerrar_eliminar(){
 				modal_eliminar.style.display = "none";
 			}
-
 			window.onclick = function(event) {
 				if (event.target == modal) {
 					modal.style.display = "none";
@@ -94,7 +90,8 @@ include('lib.php')
 					modal_eliminar.style.display = "none";
 				}
 			}
-		</script>
+		</script> -->
+		<script type="text/javascript" src="src/js/odontoiut.js"></script>
 	</head>
 <body>
 	<!-- navbar -->
@@ -139,7 +136,7 @@ include('lib.php')
 			<div class="modal-body" id="modificar-modal-body">				
 			</div>
 			<div class="modal-footer">
-				<button class="btn btn-primary form-control btn-sm" onclick="modificar_submit()">Guardar Cambios</button>
+				<button type="submit" class="btn btn-primary form-control btn-sm" onclick="modificar_submit()">Guardar Cambios</button>
 			</div>
 			</form>
 		</div>

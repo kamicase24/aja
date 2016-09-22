@@ -36,7 +36,9 @@ if ($action == 'modificar') {
 	$nom_pro = (isset($_REQUEST['nom_pro']) && !empty($_REQUEST['nom_pro']))?$_REQUEST['nom_pro']:1;
 	$det_pro = (isset($_REQUEST['det_pro']) && !empty($_REQUEST['det_pro']))?$_REQUEST['det_pro']:1;
 	$id_med = (isset($_REQUEST['id_med']) && !empty($_REQUEST['id_med']))?$_REQUEST['id_med']:1;
-	$query = pg_query($con,"update producto SET nom_pro = '$nom_pro', det_pro = '$det_pro', id_med = $id_med where id_pro = $id_pro");
+	// print "<br>".$id_pro."<br>".$nom_pro."<br>".$det_pro."<br>".$id_med;
+	$query = pg_query($con,"update producto SET nom_pro = '$nom_pro', det_pro = '$det_pro', med = $id_med where id_pro = $id_pro");
+	// print $query;
 }
 
 
