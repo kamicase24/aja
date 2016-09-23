@@ -63,3 +63,8 @@
     background-color: #5cb85c;
     color: white;
 }
+
+.prod_list{
+    overflow: auto; 
+    height: 300px; 
+}
