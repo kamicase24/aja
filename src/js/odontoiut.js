@@ -52,6 +52,24 @@ function modificar_submit(){
 function agregar(){
 	modal_agregar.style.display = "block";
 }
+function agregar_submit(){
+	var nom_pro = $("input#nom_pro").val();
+	var det_pro = $("input#det_pro").val();
+	var med = $("select#med option:selected").val();
+	var parametros = {"action":"agregar",
+					  "nom_pro":nom_pro,
+					  "det_pro":det_pro,
+					  "med":med};
+	$.ajax({
+		type: "POST",
+		url: "1.php",
+		data: parametros,
+		// success: function(a){
+		// 	window.location="inv_1.php";
+		// }
+	});
+	window.location="inv_1.php";
+}
 function cerrar_agregar(){
 	modal_agregar.style.display = "none";
 }

@@ -41,6 +41,15 @@ if ($action == 'modificar') {
 	// print $query;
 }
 
+if ($action == 'agregar') {
+	$nom_pro = (isset($_REQUEST['nom_pro']) && !empty($_REQUEST['nom_pro']))?$_REQUEST['nom_pro']:1;
+	$det_pro = (isset($_REQUEST['det_pro']) && !empty($_REQUEST['det_pro']))?$_REQUEST['det_pro']:1;
+	$med     = (isset($_REQUEST['med']) && !empty($_REQUEST['med']))?$_REQUEST['med']:1;
+
+	$query = pg_query($con, "insert into producto(nom_pro,det_pro,med) values ('$nom_pro', '$det_pro', $med)");
+	
+	$odontolib = new Odontoiut2;
+}
 
 // $sql = "WITH doble AS 
 // (INSERT INTO producto(nom_pro,det_pro,med) 
