@@ -12,11 +12,11 @@ if ($action == 'ajax') {
 	print "<input type='text' value='".$puntero."' hidden name='id_pro' id='id_pro'>";
 	print "<div class='form-group'>";
 	print "<b>Producto</b> ";
-	print "<input type='text' value='".$nom_pro."' name='nom_pro' id='nom_pro' class='form-control'> ";
+	print "<input type='text' value='".$nom_pro."' name='nom_pro' id='nom_pro' class='form-control' required>";
 	print "</div>";
 	print "<div class='form-group'>";
 	print "<b>Detalle</b> ";
-	print "<input type='text' value='".$det_pro."' name='det_pro' id='det_pro' class='form-control'> ";
+	print "<input type='text' value='".$det_pro."' name='det_pro' id='det_pro' class='form-control' required>";
 	print "</div>";
 	print "<div class='form-group'>";
 	print "<b>Medida</b> ";
@@ -48,7 +48,6 @@ if ($action == 'agregar') {
 
 	$query = pg_query($con, "insert into producto(nom_pro,det_pro,med) values ('$nom_pro', '$det_pro', $med)");
 	
-	$odontolib = new Odontoiut2;
 }
 
 // $sql = "WITH doble AS 

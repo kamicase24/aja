@@ -64,9 +64,9 @@ function agregar_submit(){
 		type: "POST",
 		url: "1.php",
 		data: parametros,
-		// success: function(a){
-		// 	window.location="inv_1.php";
-		// }
+		success: function(a){
+			window.location="inv_1.php";
+		}
 	});
 	window.location="inv_1.php";
 }

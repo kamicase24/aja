@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"d",
+				"disabled"
+			],
+			[
+				"ge",
+				"gen"
+			],
+			[
+				"fh",
+				"fh_nac"
+			],
+			[
+				"form",
+				"form-control 	Bootstrap 3 Class"
+			],
+			[
+				"btn",
+				"btn-primary 	Bootstrap 3 Class"
+			],
+			[
+				"col-md",
+				"col-md-12 	Bootstrap 3 Class"
+			],
+			[
+				"for",
+				"form-inline 	Bootstrap 3 Class"
+			],
+			[
+				"col",
+				"col-md-6 	Bootstrap 3 Class"
+			],
+			[
+				"form-",
+				"form-group 	Bootstrap 3 Class"
+			],
+			[
+				"fro",
+				"form-control 	Bootstrap 3 Class"
+			],
+			[
+				"btn-",
+				"btn-primary 	Bootstrap 3 Class"
+			],
+			[
+				"st",
+				"style	Attr"
+			],
+			[
+				"f",
+				"form-inline 	Bootstrap 3 Class"
+			],
+			[
+				"tex",
+				"text-right 	Bootstrap 3 Class"
+			],
+			[
 				"btn-s",
 				"btn-sm 	Bootstrap 3 Class"
 			],
@@ -32,10 +88,6 @@
 				"onclick	Attr"
 			],
 			[
-				"btn-",
-				"btn-aceptar"
-			],
-			[
 				"lef",
 				"text-left 	Bootstrap 3 Class"
 			],
@@ -50,22 +102,6 @@
 			[
 				"fo",
 				"form	Tag"
-			],
-			[
-				"f",
-				"form-group 	Bootstrap 3 Class"
-			],
-			[
-				"form",
-				"form-inline 	Bootstrap 3 Class"
-			],
-			[
-				"btn",
-				"btn-info 	Bootstrap 3 Class"
-			],
-			[
-				"for",
-				"form	<form>"
 			],
 			[
 				"modificar",
@@ -118,10 +154,6 @@
 			[
 				"on",
 				"onclick"
-			],
-			[
-				"d",
-				"display"
 			],
 			[
 				"gl",
@@ -180,10 +212,6 @@
 				"height"
 			],
 			[
-				"ge",
-				"getElementById"
-			],
-			[
 				"fun",
 				"function"
 			],
@@ -206,10 +234,6 @@
 			[
 				"fh_",
 				"fh_nac"
-			],
-			[
-				"fh",
-				"fh_trat"
 			],
 			[
 				"tit",
@@ -246,14 +270,6 @@
 			[
 				"trat_d",
 				"trat_divt"
-			],
-			[
-				"col",
-				"col-md-3"
-			],
-			[
-				"form-",
-				"form-inline"
 			],
 			[
 				"col-",
@@ -344,10 +360,6 @@
 				"caracterClave"
 			],
 			[
-				"tex",
-				"texto_decodificado"
-			],
-			[
 				"te",
 				"texto_codificado"
 			],
@@ -376,26 +388,10 @@
 	"buffers":
 	[
 		{
-			"file": "/opt/lampp/htdocs/modal_test/js/app.js",
-			"settings":
-			{
-				"buffer_size": 3021,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/opt/lampp/htdocs/modal_test/js/paises_ajax.php",
-			"settings":
-			{
-				"buffer_size": 2887,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "1.php",
 			"settings":
 			{
-				"buffer_size": 3124,
+				"buffer_size": 3110,
 				"line_ending": "Unix"
 			}
 		},
@@ -403,7 +399,7 @@
 			"file": "src/js/odontoiut.js",
 			"settings":
 			{
-				"buffer_size": 2272,
+				"buffer_size": 2263,
 				"line_ending": "Unix"
 			}
 		},
@@ -411,15 +407,7 @@
 			"file": "inv_1.php",
 			"settings":
 			{
-				"buffer_size": 5600,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/css/custom/inv_custom.css",
-			"settings":
-			{
-				"buffer_size": 1377,
+				"buffer_size": 5533,
 				"line_ending": "Unix"
 			}
 		},
@@ -427,7 +415,7 @@
 			"file": "hist_1.php",
 			"settings":
 			{
-				"buffer_size": 8638,
+				"buffer_size": 12633,
 				"line_ending": "CR"
 			}
 		}
@@ -485,7 +473,7 @@
 		[
 			[
 				"pack",
-				"Package Control: Remove Package"
+				"Package Control: Install Package"
 			],
 			[
 				"control",
@@ -528,7 +516,17 @@
 	],
 	"file_history":
 	[
+		"/home/jrojas/.config/sublime-text-3/Packages/User/PHP.sublime-settings",
+		"/home/jrojas/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/jrojas/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
+		"/home/jrojas/.config/sublime-text-3/Packages/User/JavaScript.sublime-settings",
+		"/home/jrojas/.config/sublime-text-3/Packages/User/Python.sublime-settings",
+		"/home/jrojas/.local/share/Odoo/addons/9.0/wolftrakglobal/models/badge_wolftrak.py",
+		"/opt/lampp/htdocs/odontoiut2/test2.php",
+		"/opt/lampp/htdocs/odontoiut2/src/css/custom/inv_custom.css",
 		"/opt/lampp/htdocs/odontoiut2/lib.php",
+		"/opt/lampp/htdocs/modal_test/js/paises_ajax.php",
+		"/opt/lampp/htdocs/modal_test/js/app.js",
 		"/opt/lampp/htdocs/odontoiut2/test.php",
 		"/opt/lampp/htdocs/odontoiut2/2.php",
 		"/opt/lampp/htdocs/odontoiut2/1.php",
@@ -536,13 +534,10 @@
 		"/opt/lampp/htdocs/modal_test/modal_modificar.php",
 		"/opt/lampp/htdocs/modal_test/index.php",
 		"/opt/lampp/htdocs/odontoiut2/src/js/2.php",
-		"/opt/lampp/htdocs/odontoiut2/test2.php",
 		"/opt/lampp/htdocs/odontoiut2/hist_1.php",
 		"/opt/lampp/htdocs/odontoiut2/src/js/sketch.js",
 		"/opt/lampp/htdocs/modal_test/modal_agregar.php",
-		"/opt/lampp/htdocs/modal_test/js/app.js",
 		"/opt/lampp/htdocs/odontoiut2/odontoiut2.sublime-project",
-		"/opt/lampp/htdocs/odontoiut2/src/css/custom/inv_custom.css",
 		"/opt/lampp/htdocs/odontoiut2/registro.php",
 		"/home/jesusrojas/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
 		"/home/jesusrojas/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
@@ -689,82 +684,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/opt/lampp/htdocs/modal_test/js/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3021,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								24,
-								24
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/opt/lampp/htdocs/modal_test/js/paises_ajax.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2887,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								611,
-								611
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 420.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "1.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3124,
+						"buffer_size": 3110,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2513,
-								2513
+								902,
+								902
 							]
 						],
 						"settings":
@@ -776,24 +713,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "src/js/odontoiut.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2272,
+						"buffer_size": 2263,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1701,
-								1701
+								515,
+								515
 							]
 						],
 						"settings":
@@ -802,33 +739,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 543.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "inv_1.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5600,
+						"buffer_size": 5533,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4539,
-								4539
+								5358,
+								5358
 							]
 						],
 						"settings":
@@ -837,69 +774,40 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 714.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/css/custom/inv_custom.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1377,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1333,
-								1333
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 546.0,
+						"translation.y": 2170.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "hist_1.php",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8638,
+						"buffer_size": 12633,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5353,
-								5353
+								8970,
+								8970
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 3,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1974.0,
+						"translation.y": 2559.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -933,7 +841,7 @@
 		"cols":
 		[
 			0.0,
-			0.0381679389313,
+			0.0379939209726,
 			1.0
 		],
 		"rows":

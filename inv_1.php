@@ -92,15 +92,14 @@ include('lib.php')
 				<h2>Nuevo producto</h2>
 			</div>
 			<div class="modal-body">
-					<input type="text" name="nom_pro" id="nom_pro" placeholder="Producto" class="form-control">
-					<input type="text" name="det_pro" id="det_pro" placeholder="Detalle" class="form-control">
-					<select name="med" id="med" class="form-control">
+					<input type="text" name="nom_pro" id="nom_pro" placeholder="Producto" class="form-control" required>
+					<input type="text" name="det_pro" id="det_pro" placeholder="Detalle" class="form-control" required>
+					<select name="med" id="med" class="form-control" required>
 						<option value="1">Ml.</option>
 					</select>
 			</div>
 			<div class="modal-footer">
-				<input type="submit" name="bt_pro" class="btn btn-primary form-control btn-sm" value="Nuevo">
-				<button type="button" class="btn btn-primary btn-sm" onclick="agregar_submit()">
+				<button type="button" class="btn btn-primary btn-sm" onclick="agregar_submit()">Nuevo</button>
 			</div>
 			</form>
 		</div>
@@ -125,7 +124,7 @@ include('lib.php')
 		</div>
 
 		<div class="col-md-12 prod_list">
-			<table id="tabla1" class="table table-bordered prod_list">
+			<table id="tabla1" class="table table-bordered">
 				<thead>
 					<th>#</th>
 					<th>Producto</th>
