@@ -10,11 +10,11 @@ include('lib.php')
 	<link rel="stylesheet" type="text/css" href="src/css/custom/hist_custom.css">
 
 	<link rel="stylesheet" type="text/css" href="src/css/bootstrap.css">
-	<!-- <link rel="stylesheet" type="text/css" href="src/css/bootstrap-datetimepicker.min.css"> -->
-	<!-- <script type="text/javascript" src="src/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="src/css/bootstrap-datetimepicker.min.css">
+	<script type="text/javascript" src="src/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="src/js/jquery.min.js"></script>
 	<script type="text/javascript" src="src/js/sketch.js"></script>
-	<!-- <script type="text/javascript" src="src/js/bootstrap-datetimepicker.min.js"></script> -->
+	<script type="text/javascript" src="src/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function() {
@@ -42,19 +42,23 @@ $(document).ready(function() {
 </script>
 </head>
 <body bgcolor="cian" id="mybody">
+
 	<h1>hello word</h1>
 
 	<form action="test.php" method="POST" id="form1">
+
 		<input type="text" name="1" id="1">
-		<canvas id="colors_sketch" width="800" height="300" style="background: url(src/img/odontograma.png) no-repeat center center;"></canvas>
+
+		<canvas id="colors_sketch" width="800" height="300" style="background: url(src/img/odontograma.png) no-repeat center;"></canvas>
+
 		<script type="text/javascript">
-			$(function() {
-				$('#colors_sketch').sketch();
-			});
+			$(function() { $('#colors_sketch').sketch(); });
 		</script>
-		<br>
+
 		<a class="btn btn-default" href="#colors_sketch" data-download="png">Guardar</a>
+
 		<input name="submit" type="submit" value="Enviar" id="enviar-btn"/>
+		<div id="b64"></div>
 	</form>
 </body>
 </html>

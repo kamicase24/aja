@@ -4,6 +4,23 @@ include('lib.php')
 <!DOCTYPE html>
 <html lang="es">
 	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		  <meta name="description" content="">
+		  <meta name="author" content="">
+		  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		  <!-- Favicon -->
+		  <link href="favicon.ico" rel="shortcut icon">
+		  <!-- Bootstrap Core CSS -->
+		  <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+		  <!-- Template CSS -->
+		  <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+		  <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+		  <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+		  <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+		  <!-- Google Fonts-->
+		  <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+		  <link href="http://fonts.googleapis.com/css?family=PT+Sans" type="text/css" rel="stylesheet">
+		  <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
 		<title>
 			Odonto-IUT
 		</title>
@@ -16,36 +33,71 @@ include('lib.php')
 		<script type="text/javascript" src="src/js/odontoiut.js"></script>
 	</head>
 <body>
-	<!-- navbar -->
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Odontoiut 2.0</a>
+	<div id="header">
+		<div class="container">
+			<div class="row">
+				<div class="logo">
+					<a href="home.html" title="">
+						<img src="assets/img/logo.png" alt="Logo" />
+					</a>
+				</div>
 			</div>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Tablero</a></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Historias<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Page 1-1</a></li>
-						<li><a href="#">Page 1-2</a></li>
-						<li><a href="#">Page 1-3</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Citas</a></li>
-				<li><a href="#">Otras cosas</a></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
-					<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Page 1-1</a></li>
-						<li><a href="#">Page 1-2</a></li>
-						<li><a href="#">Page 1-3</a></li>
-					</ul>
-				</li>
-			</ul>
 		</div>
-	</nav>
+	</div>
+	<div id="hornav" class="container no-padding">
+		<div class="row">
+			<div class="col-md-12 no-padding">
+				<div class="text-center visible-lg">
+					<ul id="hornavmenu" class="nav navbar-nav">
+						<li>
+							<a href="home.html" class="fa-home">Home</a>
+						</li>
+						<li>
+							<span class="fa-gears">Pacientes</span>
+							<ul>
+								<li>
+									<a href="registro.php">Registro</a>
+								</li>
+								<li>
+									<a href="features-accordions-tabs.html">Listado</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span class="fa-copy">Doctores</span>
+							<ul>
+								<li>
+									<a href="pages-about-us.html">Registro</a>
+								</li>
+								<li>
+									<a href="pages-services.html">Listado</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span class="fa-th">Inventario</span>
+							<ul>
+								<li>
+									<a href="portfolio-2-column.html"> Agregar producto</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span class="fa-font">Reportes</span>
+							<ul>
+								<li>
+									<a href="blog-list.html">Generar reportes</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="contact.html" class="fa-comment">Recipes</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- MODAL MODIFICAR PRODUCTO -->
 	<div id="modificar-modal" class="modal">
@@ -149,7 +201,7 @@ include('lib.php')
 							<button type="button" class="btn btn-primary" onclick="modificar('<?php print $var[0]; ?>')" id="btn-modal-modificar">
 							<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Modificar
 							</button>
-							<button type="button" class="btn btn-danger btn-sm"	onclick="eliminar('<?php print $var[0]; ?>')">
+							<button type="button" class="btn btn-danger btn-sm" onclick="eliminar('<?php print $var[0]; ?>')">
 							<span class="glyphicon glyphicon-trash"></span>
 							</button>
 							</td>

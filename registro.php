@@ -4,6 +4,27 @@ include('lib.php')
 <!DOCTYPE html>
 <html lang="es">
 	<head>
+	 <!-- Title -->
+        <title>Lifestyle - Professional Bootstrap Template</title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Favicon -->
+        <link href="favicon.ico" rel="shortcut icon">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+        <!-- Google Fonts-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans" type="text/css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
 		<title>
 			Odonto-IUT
 		</title>
@@ -12,6 +33,91 @@ include('lib.php')
 		<link rel="stylesheet" type="text/css" href="src/css/bootstrap/bootstrap.min.css">
 	</head>
 	<body>
+	 <div id="body-bg">
+            <ul class="social-icons pull-right hidden-xs">
+                <li class="social-rss">
+                    <a href="#" target="_blank" title="RSS"></a>
+                </li>
+                <li class="social-twitter">
+                    <a href="#" target="_blank" title="Twitter"></a>
+                </li>
+                <li class="social-facebook">
+                    <a href="#" target="_blank" title="Facebook"></a>
+                </li>
+                <li class="social-googleplus">
+                    <a href="#" target="_blank" title="GooglePlus"></a>
+                </li>
+            </ul>
+<!--             <div id="pre-header" class="container" style="height:340px">
+            </div> -->
+            <div id="header">
+                <div class="container">
+                    <div class="row">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="index.html" title="">
+                                <img src="assets/img/logo.png" alt="Logo" />
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Menu -->
+            <div id="hornav" class="container no-padding">
+                <div class="row">
+                    <div class="col-md-12 no-padding">
+                        <div class="text-center visible-lg">
+                            <ul id="hornavmenu" class="nav navbar-nav">
+                                <li>
+                                    <a href="home.html" class="fa-home">Home</a>
+                                </li>
+                                <li>
+                                    <span class="registro.php">Pacientes</span>
+                                    <ul>
+                                        <li>
+                                            <a href="features-testimonials.html">Registro</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-accordions-tabs.html">Listado</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="fa-copy">Doctores</span>
+                                    <ul>
+                                        <li>
+                                            <a href="pages-about-us.html">Registro</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-services.html">Listado</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="fa-th">Inventario</span>
+                                    <ul>
+                                        <li>
+                                            <a href="portfolio-2-column.html"> Agregar producto</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="fa-font">Reportes</span>
+                                    <ul>
+                                        <li>
+                                            <a href="blog-list.html">Generar reportes</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="fa-comment">Recipes</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">

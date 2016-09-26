@@ -76,16 +76,27 @@
 			// return window.open(this.el.toDataURL(mime));
 			// modificado
 			var result_1 = this.el.toDataURL(mime);
-			var dataString = '1=' + result_1;
-
-			$.ajax
-			// var x = document.createElement("INPUT");
-			// x.setAttribute("type","text");
-			// x.setAttribute("value",result_1);
-			// x.setAttribute("hidden",false);
-			// x.setAttribute("name","3");
-			// document.getElementById("form1").appendChild(x);
-			// return window.alert('Cambios guardados'+dataString);
+			var parametros = {"action":"hist1",
+									"b64":result_1,
+								   "nom_pac":$("#nom_pac").val(),
+									"ape_pac":$("#ape_pac").val(),
+									"tp_ced":$("#tp_ced").val(),
+									"ced_pac":$("#ced_pac").val(),
+									"fh_nac":$("#fh_nac").val(),
+									"edad":$("#edad").val(),
+									"gen":$("#gen").val(),
+									"tlf":$("#direcc").val(),
+									"esp":$("#esp").val(),
+									"tra":$("#tra").val()};
+			window.alert(result_1);
+			$.ajax({
+				type: "POST",
+				url: "1.php",
+				data: parametros,
+				success: function(a) {
+					$('#b64').html(a);
+				}
+			});
 		};
 		Sketch.prototype.set = function(key, value) {
 			this[key] = value;

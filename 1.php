@@ -50,6 +50,21 @@ if ($action == 'agregar') {
 	
 }
 
+if ($action == 'hist1') {
+	$b64 = (isset($_REQUEST['b64']) && !empty($_REQUEST['b64']))?$_REQUEST['b64']:1;
+	print $b64;
+	print "<br>".(isset($_REQUEST['nom_pac']) && !empty($_REQUEST['nom_pac']))?$_REQUEST['nom_pac']:1;
+	print "<br>".(isset($_REQUEST['ape_pac']) && !empty($_REQUEST['ape_pac']))?$_REQUEST['ape_pac']:1;
+	print "<br>".(isset($_REQUEST['tp_ced']) && !empty($_REQUEST['tp_ced']))?$_REQUEST['tp_ced']:1;
+	print "<br>".(isset($_REQUEST['ced_pac']) && !empty($_REQUEST['ced_pac']))?$_REQUEST['ced_pac']:1;
+	print "<br>".(isset($_REQUEST['fh_nac']) && !empty($_REQUEST['fh_nac']))?$_REQUEST['fh_nac']:1;
+	print "<br>".(isset($_REQUEST['edad']) && !empty($_REQUEST['edad']))?$_REQUEST['edad']:1;
+	print "<br>".(isset($_REQUEST['gen']) && !empty($_REQUEST['gen']))?$_REQUEST['gen']:1;
+	print "<br>".(isset($_REQUEST['tlf']) && !empty($_REQUEST['tlf']))?$_REQUEST['tlf']:1;
+	print "<br>".(isset($_REQUEST['esp']) && !empty($_REQUEST['esp']))?$_REQUEST['esp']:1;
+	print "<br>".(isset($_REQUEST['tra']) && !empty($_REQUEST['tra']))?$_REQUEST['tra']:1;
+}
+
 // $sql = "WITH doble AS 
 // (INSERT INTO producto(nom_pro,det_pro,med) 
 // VALUES ('$nom_pro','$det_pro',$med) returning id_pro )
