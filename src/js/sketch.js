@@ -85,7 +85,8 @@
 									"fh_nac":$("#fh_nac").val(),
 									"edad":$("#edad").val(),
 									"gen":$("#gen").val(),
-									"tlf":$("#direcc").val(),
+									"tlf":$("#tlf").val(),
+									"direcc":$("#direcc").val(),
 									"esp":$("#esp").val(),
 									"tra":$("#tra").val()};
 			window.alert(result_1);

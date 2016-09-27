@@ -1,3 +1,14 @@
+function Solo_Numerico(variable){
+	Numer=parseInt(variable);
+	if (isNaN(Numer)){
+		return "";
+	}
+	return Numer;
+}
+function ValNumero(Control){
+	Control.value=Solo_Numerico(Control.value);
+}
+
 function eliminar(puntero){
 	modal_eliminar.style.display = "block";
 	h_input = document.createElement("input");
@@ -90,3 +101,20 @@ window.onclick = function(event) {
 		modal_eliminar.style.display = "none";
 	}
 }
+
+// inventario 2
+$(document).ready(function()
+{
+	var nuv_ent = document.getElementById('nueva_entrada_modal');
+	$('#nueva_entrada').click(function(event) {
+		nuv_ent.style.display = "block";
+	});
+	$('#cerrar_nuv_ent').click(function(event) {
+		nuv_ent.style.display = "none";
+	});
+	window.onclick = function(event){
+		if (event.target == nuv_ent){
+			nuv_ent.style.display = "none";
+		}
+	}
+});
