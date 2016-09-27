@@ -1,7 +1,7 @@
 <?php
 class Database_pro{
 	function conecta(){
-	$con = pg_pconnect("host=localhost port=5432 dbname=odontoiut2 password=1234 user=jesusrojas");
+	$con = pg_pconnect("host=localhost port=5432 dbname=odontoiut2 password=123 user=jrojas");
 	return $con;
 	}
 }
