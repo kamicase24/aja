@@ -20,6 +20,20 @@ include('lib.php')
 		<script type="text/javascript" src="src/js/jquery.min.js"></script>
 		<script type="text/javascript" src="src/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="src/js/odontoiut.js"></script>
+<script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+<script>
+webshims.setOptions('forms-ext', {types: 'date'});
+webshims.polyfill('forms forms-ext');
+$.webshims.formcfg = {
+en: {
+    dFormat: '-',
+    dateSigns: '-',
+    patterns: {
+        d: "yy-mm-dd"
+    }
+}
+};
+</script>
 	</head>
 <body>
 	<div id="header">
@@ -88,80 +102,30 @@ include('lib.php')
 		</div>
 	</div>
 
-	<!-- MODAL MODIFICAR PRODUCTO -->
-	<div id="modificar-modal" class="modal">
+	<div id="nueva_entrada_modal" class="modal">
 		<div class="modal-content">
-			<form id="modificar-modal-form" method="post" action="inv_1.php" class="form-inline">
 			<div class="modal-header">
-				<span onclick="cerrar_modificar()" class="close">×</span>
-				<h2>Modificar Producto</h2>
-			</div>
-			<div class="modal-body" id="modificar-modal-body">				
-			</div>
-			<div class="modal-footer">
-				<button type="submit" class="btn btn-primary form-control btn-sm" onclick="modificar_submit()">Guardar Cambios</button>
-			</div>
-			</form>
-		</div>
-	</div>
-
-	<!-- MODAL ELIMINAR -->
-	<div id="elimitar-modal" class="modal">
-		<form>
-		<div class="modal-dialog">
-			<div class="modal-content">
-			<div class="modal-header" id="eliminar-modal-body">
-				<span onclick="cerrar_eliminar()" class="close">×</span>
-				<h3>Esta seguro?</h3>
-			</div>
-				<p class="lead text-muted text-center" style="display: block;margin:10px">Esta acción eliminará de forma permanente el registro. Desea continuar?</p>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default btn-sm" onclick="cerrar_eliminar()">Cancelar</button>
-				<button type="button" class="btn btn-primary btn-sm" onclick="eliminar_aceptar()">Aceptar</button>
-			</div>
-			</div>
-		</div>
-		</form>
-	</div>
-
-	<!-- MODAL AGREGAR PRODUCTO -->
-	<div id="agregar-modal" class="modal">
-		<div class="modal-content">
-			<form action="inv_1.php" method="post" class="form-inline">
-			<div class="modal-header">
-				<span onclick="cerrar_agregar()" class="close">×</span>
+				<span id="cerrar_nuv_ent" class="close">×</span>
 				<h2>Nuevo producto</h2>
 			</div>
-			<div class="modal-body">
-					<input type="text" name="nom_pro" id="nom_pro" placeholder="Producto" class="form-control" required>
-					<input type="text" name="det_pro" id="det_pro" placeholder="Detalle" class="form-control" required>
-					<select name="med" id="med" class="form-control" required>
-						<option value="1">Ml.</option>
-					</select>
+			<div class="modal-body form-inline">
+				<!-- <div class="col-md-3"> -->
+				<select name="pro" id="pro" class="form-control" required>
+					<option value=" " disabled selected hidden>Producto</option>
+					<?php $odontolib = new Odontoiut2; $odontolib ->lista('producto',0,1); ?>
+				</select>
+					<input type="number" name="cant_rec" id="cant_rec" placeholder="Cantidad Recibida" onkeyUp="return ValNumero(this);" class="form-control" required>
+					<input type="date" name="fh_rec" id="fh_rec" placeholder="Fecha de recepcion" class="form-control" required>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-primary btn-sm" onclick="agregar_submit()">Nuevo</button>
 			</div>
-			</form>
 		</div>
 	</div>
 
 	<div class="container">
-		<div class="col-md-6">
-			<h3 id="id_pro">Lista de Productos</h3>
-		</div>
-
-		<!-- boton agregar -->
-		<div class="col-md-6">
-			<h3 class="text-right">
-			<button
-				onclick="agregar()"
-				id="btn-modal-agregar"
-				type="button"
-				class="btn btn-default btn-sm">
-				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Agregar
-			</button>
-			</h3>
+		<div class="col-md-12">
+			<h3 id="id_pro">Inventario</h3>
 		</div>
 
 		<div class="col-md-12 prod_list">
@@ -169,16 +133,28 @@ include('lib.php')
 				<thead>
 					<th>#</th>
 					<th>Producto</th>
-					<th>Detalle</th>
 					<th>Medida</th>
+					<th>Existencia</th>
 					<th></th>
 				</thead>
 				<?php
-					// Muestra
-					// $odontolib = new Odontoiut2;
-					// $odontolib -> producto();
-					$db = new Database_pro; $con = $db->conecta();
-					$query = pg_query($con, "select id_pro, nom_pro, det_pro, medida.med from producto, medida order by id_pro");
+				$db = new Database_pro; $con = $db->conecta();
+				$query = pg_query($con, "select producto.id_pro,producto.nom_pro,	medida.med, inventario.exis
+										from producto, medida,inventario
+										where producto.id_pro = inventario.id_pro order by producto.id_pro");
+				if (pg_num_rows($query)==0) {
+					?>
+					<tr>
+						<td colspan="5" class="text-center">
+							No hay nada que mostrar
+							<button type="button" class="btn btn-primary btn-sm" onclick="" id="nueva_entrada">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+							</button>
+						</td>
+					</tr>
+					<?php
+				}
+				else{
 					while ($var = pg_fetch_row($query)) {
 						?>
 						<tbody>
@@ -188,22 +164,17 @@ include('lib.php')
 							<td><?php print $var[3]; ?></td>
 							<td>
 							<button type="button" class="btn btn-primary" onclick="" id="btn-modal-modificar">
-							<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Modificar
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
 							</button>
 							<button type="button" class="btn btn-danger btn-sm" onclick="">
-							<span class="glyphicon glyphicon-trash"></span>
+							<span class="glyphicon glyphicon-minus"></span> 
 							</button>
 							</td>
 						</tbody>
 						<?php
 					}
-				?>
+				} ?>
 			</table>
 		</div>
-			<script>
-				var modal_agregar = document.getElementById("agregar-modal");
-				var modal = document.getElementById("modificar-modal");
-				var modal_eliminar = document.getElementById("elimitar-modal");
-			</script>
 	</div>
 </body>

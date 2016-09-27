@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"btn-",
+				"btn-warning 	Bootstrap 3 Class"
+			],
+			[
+				"btn-s",
+				"btn-success 	Bootstrap 3 Class"
+			],
+			[
+				"btn",
+				"btn-toolbar 	Bootstrap 3 Class"
+			],
+			[
+				"col",
+				"col-md-12 	Bootstrap 3 Class"
+			],
+			[
+				"btn-d",
+				"btn-danger 	Bootstrap 3 Class"
+			],
+			[
+				"ced",
+				"ced_pac"
+			],
+			[
+				"h",
+				"h6	Tag"
+			],
+			[
+				"link",
+				"glyphicon-link 	Bootstrap 3 Class"
+			],
+			[
+				"col-",
+				"col-md-6 	Bootstrap 3 Class"
+			],
+			[
+				"input",
+				"input_fh_trat"
+			],
+			[
 				"center",
 				"center-block 	Bootstrap 3 Class"
 			],
@@ -14,14 +54,6 @@
 			[
 				"read",
 				"readonly"
-			],
-			[
-				"btn-s",
-				"btn-sm 	Bootstrap 3 Class"
-			],
-			[
-				"btn-d",
-				"btn-default 	Bootstrap 3 Class"
 			],
 			[
 				"id",
@@ -42,10 +74,6 @@
 			[
 				"onC",
 				"onclick	Attr"
-			],
-			[
-				"btn-",
-				"btn-aceptar"
 			],
 			[
 				"lef",
@@ -70,10 +98,6 @@
 			[
 				"form",
 				"form-inline 	Bootstrap 3 Class"
-			],
-			[
-				"btn",
-				"btn-info 	Bootstrap 3 Class"
 			],
 			[
 				"for",
@@ -188,10 +212,6 @@
 				"submit"
 			],
 			[
-				"h",
-				"height"
-			],
-			[
 				"ge",
 				"getElementById"
 			],
@@ -206,10 +226,6 @@
 			[
 				"s",
 				"script	Tag"
-			],
-			[
-				"input",
-				"input"
 			],
 			[
 				"pg_f",
@@ -260,16 +276,8 @@
 				"trat_divt"
 			],
 			[
-				"col",
-				"col-md-3"
-			],
-			[
 				"form-",
 				"form-inline"
-			],
-			[
-				"col-",
-				"col-md-6"
 			],
 			[
 				"trat_",
@@ -391,16 +399,16 @@
 			"file": "inv_1.php",
 			"settings":
 			{
-				"buffer_size": 7137,
+				"buffer_size": 6512,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "hist_1.php",
+			"contents": "<?php\ninclude('lib.php')\n?>\n<!DOCTYPE html>\n<html lang=\"es\">\n	<head>\n		<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />\n		<link href=\"favicon.ico\" rel=\"shortcut icon\">\n		<link rel=\"stylesheet\" href=\"assets/css/animate.css\" rel=\"stylesheet\">\n		<link rel=\"stylesheet\" href=\"assets/css/font-awesome.css\" rel=\"stylesheet\">\n		<link rel=\"stylesheet\" href=\"assets/css/nexus.css\" rel=\"stylesheet\">\n		<link rel=\"stylesheet\" href=\"assets/css/responsive.css\" rel=\"stylesheet\">\n		<link rel=\"stylesheet\" href=\"assets/css/custom.css\" rel=\"stylesheet\">\n		<title>\n			Odonto-IUT\n		</title>\n		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"src/css/bootstrap.css\">\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"src/css/custom/inv_custom.css\">\n		<script type=\"text/javascript\" src=\"src/js/jquery.min.js\"></script>\n		<script type=\"text/javascript\" src=\"src/js/bootstrap.min.js\"></script>\n		<script type=\"text/javascript\" src=\"src/js/odontoiut.js\"></script>\n	</head>\n<body>\n	<div id=\"header\">\n		<div class=\"container\">\n			<div class=\"row\">\n				<div class=\"logo\">\n					<a href=\"home.html\" title=\"\">\n						<img src=\"assets/img/logo.png\" alt=\"Logo\" />\n					</a>\n				</div>\n			</div>\n		</div>\n	</div>\n	<div id=\"hornav\" class=\"container no-padding\">\n		<div class=\"row\">\n			<div class=\"col-md-12 no-padding\">\n				<div class=\"text-center visible-lg\">\n					<ul id=\"hornavmenu\" class=\"nav navbar-nav\">\n						<li>\n							<a href=\"home.html\" class=\"fa-home\">Home</a>\n						</li>\n						<li>\n							<span class=\"fa-gears\">Pacientes</span>\n							<ul>\n								<li>\n									<a href=\"registro.php\">Registro</a>\n								</li>\n								<li>\n									<a href=\"features-accordions-tabs.html\">Listado</a>\n								</li>\n							</ul>\n						</li>\n						<li>\n							<span class=\"fa-copy\">Doctores</span>\n							<ul>\n								<li>\n									<a href=\"pages-about-us.html\">Registro</a>\n								</li>\n								<li>\n									<a href=\"pages-services.html\">Listado</a>\n								</li>\n							</ul>\n						</li>\n						<li>\n							<span class=\"fa-th\">Inventario</span>\n							<ul>\n								<li>\n									<a href=\"portfolio-2-column.html\"> Agregar producto</a>\n								</li>\n							</ul>\n						</li>\n						<li>\n							<span class=\"fa-font\">Reportes</span>\n							<ul>\n								<li>\n									<a href=\"blog-list.html\">Generar reportes</a>\n								</li>\n							</ul>\n						</li>\n						<li>\n							<a href=\"contact.html\" class=\"fa-comment\">Recipes</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</div>\n	</div>\n	",
 			"settings":
 			{
-				"buffer_size": 10882,
-				"line_ending": "CR"
+				"buffer_size": 2536,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -415,7 +423,7 @@
 			"file": "1.php",
 			"settings":
 			{
-				"buffer_size": 4171,
+				"buffer_size": 4815,
 				"line_ending": "Unix"
 			}
 		},
@@ -423,15 +431,15 @@
 			"file": "src/js/sketch.js",
 			"settings":
 			{
-				"buffer_size": 5805,
+				"buffer_size": 5840,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "test.php",
+			"file": "lib.php",
 			"settings":
 			{
-				"buffer_size": 1754,
+				"buffer_size": 1803,
 				"line_ending": "Unix"
 			}
 		}
@@ -527,13 +535,17 @@
 	[
 		"/opt/lampp/htdocs/odontoiut2",
 		"/opt/lampp/htdocs/odontoiut2/src",
-		"/opt/lampp/htdocs/odontoiut2/src/js"
+		"/opt/lampp/htdocs/odontoiut2/src/css",
+		"/opt/lampp/htdocs/odontoiut2/src/css/custom"
 	],
 	"file_history":
 	[
+		"/opt/lampp/htdocs/odontoiut2/hist_1.php",
+		"/opt/lampp/htdocs/odontoiut2/src/css/custom/inv_custom.css",
+		"/opt/lampp/htdocs/odontoiut2/src/css/custom/hist_custom.css",
+		"/opt/lampp/htdocs/odontoiut2/test.php",
 		"/opt/lampp/htdocs/odontoiut2/home.html",
 		"/opt/lampp/htdocs/odontoiut2/registro.php",
-		"/opt/lampp/htdocs/odontoiut2/hist_1.php",
 		"/opt/lampp/htdocs/odontoiut2/inv_1.php",
 		"/opt/lampp/htdocs/odontoiut2/HTML/assets/css/nexus.css",
 		"/opt/lampp/htdocs/odontoiut2/assets/css/nexus.css",
@@ -545,9 +557,7 @@
 		"/opt/lampp/htdocs/modal_test/js/paises_ajax.php",
 		"/opt/lampp/htdocs/odontoiut2/1.php",
 		"/opt/lampp/htdocs/odontoiut2/src/js/odontoiut.js",
-		"/opt/lampp/htdocs/odontoiut2/src/css/custom/inv_custom.css",
 		"/opt/lampp/htdocs/odontoiut2/lib.php",
-		"/opt/lampp/htdocs/odontoiut2/test.php",
 		"/opt/lampp/htdocs/odontoiut2/2.php",
 		"/opt/lampp/htdocs/modal_test/modal_eliminar.php",
 		"/opt/lampp/htdocs/modal_test/modal_modificar.php",
@@ -567,7 +577,6 @@
 		"/opt/lampp/htdocs/odontoiut/js/flotante.js",
 		"/opt/lampp/htdocs/odontoiut2/js/sketch.js",
 		"/opt/lampp/htdocs/odontoiut2/css/bootstrap.css",
-		"/opt/lampp/htdocs/odontoiut2/src/css/custom/hist_custom.css",
 		"/opt/lampp/htdocs/odontoiut/libreria.php",
 		"/opt/lampp/htdocs/odontoiut2/test.html",
 		"/opt/lampp/htdocs/odontoiut2/src/css/custom/registro_custom.css",
@@ -617,7 +626,7 @@
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -631,6 +640,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"eraser",
+			"direcc",
+			"  ",
 			"targe",
 			"pre-hea",
 			"backgro",
@@ -703,7 +715,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -712,15 +724,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7137,
+						"buffer_size": 6512,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6709,
-								6709
+								4683,
+								4683
 							]
 						],
 						"settings":
@@ -730,39 +742,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1344.0,
+						"translation.y": 1064.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "hist_1.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10882,
+						"buffer_size": 2536,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9567,
-								9567
+								2536,
+								2536
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 3
+							"tab_size": 3,
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 34.0,
-						"translation.y": 1722.0,
+						"translation.x": 0.0,
+						"translation.y": 310.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -788,27 +800,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 121.0,
+						"translation.y": 1008.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
 					"buffer": 3,
 					"file": "1.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4171,
+						"buffer_size": 4815,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2622,
-								2622
+								4204,
+								4204
 							]
 						],
 						"settings":
@@ -817,33 +835,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 798.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 4,
 					"file": "src/js/sketch.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5805,
+						"buffer_size": 5840,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2815,
-								2815
+								5448,
+								5448
 							]
 						],
 						"settings":
@@ -853,40 +865,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 882.0,
+						"translation.y": 2333.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "test.php",
-					"semi_transient": false,
+					"file": "lib.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1754,
+						"buffer_size": 1803,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1708,
-								1708
+								1445,
+								1445
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 3,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 336.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -920,7 +931,7 @@
 		"cols":
 		[
 			0.0,
-			0.526717557252,
+			0.961832061069,
 			1.0
 		],
 		"rows":
@@ -984,7 +995,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 50.0,
+	"side_bar_width": 322.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
