@@ -36,9 +36,7 @@ if ($action == 'modificar') {
 	$nom_pro = (isset($_REQUEST['nom_pro']) && !empty($_REQUEST['nom_pro']))?$_REQUEST['nom_pro']:1;
 	$det_pro = (isset($_REQUEST['det_pro']) && !empty($_REQUEST['det_pro']))?$_REQUEST['det_pro']:1;
 	$id_med = (isset($_REQUEST['id_med']) && !empty($_REQUEST['id_med']))?$_REQUEST['id_med']:1;
-	// print "<br>".$id_pro."<br>".$nom_pro."<br>".$det_pro."<br>".$id_med;
 	$query = pg_query($con,"update producto SET nom_pro = '$nom_pro', det_pro = '$det_pro', med = $id_med where id_pro = $id_pro");
-	// print $query;
 }
 
 if ($action == 'agregar') {
@@ -46,8 +44,11 @@ if ($action == 'agregar') {
 	$det_pro = (isset($_REQUEST['det_pro']) && !empty($_REQUEST['det_pro']))?$_REQUEST['det_pro']:1;
 	$med     = (isset($_REQUEST['med']) && !empty($_REQUEST['med']))?$_REQUEST['med']:1;
 
-	$query = pg_query($con, "insert into producto(nom_pro,det_pro,med) values ('$nom_pro', '$det_pro', $med)");
-	
+	$query = pg_query($con, "WITH doble AS 
+							(insert into producto(nom_pro,det_pro,med) 
+							values ('$nom_pro', '$det_pro', $med) returning id_pro) 
+							insert into inventario(id_pro) 
+							values ((select id_pro from doble))");
 }
 
 if ($action == 'hist1') {
@@ -76,6 +77,60 @@ if ($action == 'trat') {
 	print (isset($_REQUEST['trat']) && !empty($_REQUEST['trat']))?$_REQUEST['trat']:1;
 }
 
+if ($action == 'proceso') {
+	$puntero = (isset($_REQUEST['puntero']) && !empty($_REQUEST['puntero']))?$_REQUEST['puntero']:1;
+	$id_pro = (isset($_REQUEST['id_pro']) && !empty($_REQUEST['id_pro']))?$_REQUEST['id_pro']:1;
+	print 	"<script>
+				var rec_pro = document.getElementById('rec_pro_modal');
+				$(document).ready(function()
+				{
+					$( function() {
+	    				$( '#fh_pro' ).datepicker({
+	    	  			changeMonth: true,
+						changeYear: true
+						});
+					});
+				});
+			</script>";
+	print "<input type='text' hidden value=".$puntero." id='inv_line'>";
+	print "<input type='text' hidden value=".$id_pro." id='id_pro'>";
+	print "<input type='number' name='cant' id='cant' placeholder='Cantidad' onkeyUp='return ValNumero(this);' class='form-control' required>";
+	print "<input type='date' name='fh_pro' id='fh_pro' placeholder='Fecha del movimiento' class='form-control' required>";		
+}
+
+if ($action == 'recepcion') {
+	$id_inv = (isset($_REQUEST['inv_line']) && !empty($_REQUEST['inv_line']))?$_REQUEST['inv_line']:1;
+	$id_pro = (isset($_REQUEST['pro']) && !empty($_REQUEST['pro']))?$_REQUEST['pro']:1;
+	$cant_rec = (isset($_REQUEST['cant_rec']) && !empty($_REQUEST['cant_rec']))?$_REQUEST['cant_rec']:1;
+	$fh_rec = (isset($_REQUEST['fh_rec']) && !empty($_REQUEST['fh_rec']))?$_REQUEST['fh_rec']:1;
+
+	$sql = "WITH doble AS 
+			(INSERT INTO recepcion(fh_rec, cant_rec, id_pro)
+			VALUES (to_date('$fh_rec','dd-mm-yyyy'),$cant_rec,$id_pro) returning cant_rec)
+			UPDATE inventario 
+			SET exis = (SELECT exis 
+						FROM inventario
+						WHERE id_inv = $id_inv)+(SELECT cant_rec FROM doble) 
+			WHERE id_inv = $id_inv";
+	$query = pg_query($con,$sql);
+}
+
+if ($action == 'consumir') {
+	$id_inv = (isset($_REQUEST['inv_line']) && !empty($_REQUEST['inv_line']))?$_REQUEST['inv_line']:1;
+	$id_pro = (isset($_REQUEST['pro']) && !empty($_REQUEST['pro']))?$_REQUEST['pro']:1;
+	$cant_con = (isset($_REQUEST['cant_con']) && !empty($_REQUEST['cant_con']))?$_REQUEST['cant_con']:1;
+	$fh_con = (isset($_REQUEST['fh_con']) && !empty($_REQUEST['fh_con']))?$_REQUEST['fh_con']:1;
+
+	$sql = "WITH doble AS 
+			(INSERT INTO consumo(fh_con, cant_con, id_pro)
+			VALUES (to_date('$fh_con','dd-mm-yyyy'),$cant_con,$id_pro) returning cant_con)
+			UPDATE inventario 
+			SET exis = (SELECT exis 
+						FROM inventario
+						WHERE id_inv = $id_inv)-(SELECT cant_con FROM doble) 
+			WHERE id_inv = $id_inv";
+	$query = pg_query($con,$sql);
+}
 // $sql = "WITH doble AS 
 // (INSERT INTO producto(nom_pro,det_pro,med) 
 // VALUES ('$nom_pro','$det_pro',$med) returning id_pro )

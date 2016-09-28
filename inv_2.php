@@ -18,18 +18,10 @@ include('lib.php')
 		<link rel="stylesheet" href="src/css/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="src/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="src/css/custom/inv_custom.css">
-		<script type="text/javascript" src="src/js/jquery.min.js"></script>
-		<script type="text/javascript" src="src/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="src/js/odontoiut.js"></script>
+		<script src="src/js/jquery.min.js"></script>
+		<script src="src/js/bootstrap.min.js"></script>
+		<script src="src/js/odontoiut.js"></script>
 		<script src="src/js/jquery-ui.js"></script>
-		  <script>
-  $( function() {
-    $( "#fh_rec" ).datepicker({
-      changeMonth: true,
-      changeYear: true
-    });
-  } );
-  </script>
 	</head>
 <body>
 	<div id="header">
@@ -98,24 +90,59 @@ include('lib.php')
 		</div>
 	</div>
 
+	<!-- MODAL AGREGAR PRODUCTO -->
 	<div id="nueva_entrada_modal" class="modal">
 		<div class="modal-content">
 			<div class="modal-header">
 				<span id="cerrar_nuv_ent" class="close">×</span>
 				<h2>Nuevo producto</h2>
 			</div>
-			<div class="modal-body form-inline">
-				<!-- <div class="col-md-3"> -->
-				<select name="pro" id="pro" class="form-control" required>
-					<option value=" " disabled selected hidden>Producto</option>
-					<?php $odontolib = new Odontoiut2; $odontolib ->lista('producto',0,1); ?>
-				</select>
-					<input type="number" name="cant_rec" id="cant_rec" placeholder="Cantidad Recibida" onkeyUp="return ValNumero(this);" class="form-control" required>
-					<input type="date" name="fh_rec" id="fh_rec" placeholder="Fecha de recepcion" class="form-control" required>
+			<div class="modal-body">
+					<input type="text" name="nom_pro" id="nom_pro" placeholder="Producto" class="form-control" required>
+					<input type="text" name="det_pro" id="det_pro" placeholder="Detalle" class="form-control" required>
+					<select name="med" id="med" class="form-control" required>
+						<option value="1">Ml.</option>
+					</select>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-primary btn-sm" onclick="agregar_submit()">Nuevo</button>
 			</div>
+		</div>
+	</div>
+
+	<!-- MODAL RECEPCION -->
+	<div id="rec_pro_modal" class="modal">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span onclick="cerrar_recibir()" class="close">×</span>
+				<h2>Recibir un produco</h2>
+			</div>
+			<div id="rec_pro_body" class="modal-body form-inline">
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn-sm" onclick="recibir()">Recibir</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<!-- MODAL CONSUMO -->
+	<div id="con_pro_modal" class="modal">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span onclick="cerrar_consumo()" class="close">×</span>
+				<h2>Consumir un producto</h2>
+			</div>
+			<div id="con_pro_body" class="modal-body form-inline">
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn-sm" onclick="consumir()">Consumir</button>
+			</div>
+		</div>
 		</div>
 	</div>
 
@@ -135,9 +162,9 @@ include('lib.php')
 				</thead>
 				<?php
 				$db = new Database_pro; $con = $db->conecta();
-				$query = pg_query($con, "select producto.id_pro,producto.nom_pro,	medida.med, inventario.exis
+				$query = pg_query($con, "select inventario.id_inv,producto.id_pro,producto.nom_pro,	medida.med, inventario.exis
 										from producto, medida,inventario
-										where producto.id_pro = inventario.id_pro order by producto.id_pro");
+										where inventario.id_pro = producto.id_pro order by producto.id_pro");
 				if (pg_num_rows($query)==0) {
 					?>
 					<tr>
@@ -155,14 +182,14 @@ include('lib.php')
 						?>
 						<tbody>
 							<td><?php print $var[0]; ?></td>
-							<td><?php print $var[1]; ?></td>
 							<td><?php print $var[2]; ?></td>
 							<td><?php print $var[3]; ?></td>
+							<td><?php print $var[4]; ?></td>
 							<td>
-							<button type="button" class="btn btn-primary" onclick="" id="btn-modal-modificar">
+							<button type="button" id="abrir_modal_rec" class="btn btn-primary" onclick="abrir_recibir(<?php print $var[0].','.$var[1]; ?>)">
 							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
 							</button>
-							<button type="button" class="btn btn-danger btn-sm" onclick="">
+							<button type="button" id="cerrar_modal_rec" class="btn btn-danger btn-sm" onclick="abrir_consumo(<?php print $var[0].','.$var[1]; ?>)">
 							<span class="glyphicon glyphicon-minus"></span> 
 							</button>
 							</td>
@@ -172,5 +199,19 @@ include('lib.php')
 				} ?>
 			</table>
 		</div>
+		<div id="boom"></div>
+		<script>
+			var rec_pro = document.getElementById('rec_pro_modal');
+			var con_pro = document.getElementById('con_pro_modal');
+			$(document).ready(function()
+			{
+				$( function() {
+    				$( "#fh_rec" ).datepicker({
+    	  			changeMonth: true,
+					changeYear: true
+					});
+				});
+			});
+		</script>
 	</div>
 </body>

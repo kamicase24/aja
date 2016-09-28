@@ -99,7 +99,7 @@ include('lib.php')
 			<div class="modal-body" id="modificar-modal-body">				
 			</div>
 			<div class="modal-footer">
-				<button type="submit" class="btn btn-primary form-control btn-sm" onclick="modificar_submit()">Guardar Cambios</button>
+				<button type="button" class="btn btn-primary form-control btn-sm" onclick="modificar_submit()">Guardar Cambios</button>
 			</div>
 			</form>
 		</div>
@@ -107,7 +107,6 @@ include('lib.php')
 
 	<!-- MODAL ELIMINAR -->
 	<div id="elimitar-modal" class="modal">
-		<form>
 		<div class="modal-dialog">
 			<div class="modal-content">
 			<div class="modal-header" id="eliminar-modal-body">
@@ -121,18 +120,16 @@ include('lib.php')
 			</div>
 			</div>
 		</div>
-		</form>
 	</div>
 
 	<!-- MODAL AGREGAR PRODUCTO -->
 	<div id="agregar-modal" class="modal">
 		<div class="modal-content">
-			<form action="inv_1.php" method="post" class="form-inline">
 			<div class="modal-header">
 				<span onclick="cerrar_agregar()" class="close">×</span>
 				<h2>Nuevo producto</h2>
 			</div>
-			<div class="modal-body">
+			<div class="modal-body form-inline">
 					<input type="text" name="nom_pro" id="nom_pro" placeholder="Producto" class="form-control" required>
 					<input type="text" name="det_pro" id="det_pro" placeholder="Detalle" class="form-control" required>
 					<select name="med" id="med" class="form-control" required>
@@ -142,7 +139,6 @@ include('lib.php')
 			<div class="modal-footer">
 				<button type="button" class="btn btn-primary btn-sm" onclick="agregar_submit()">Nuevo</button>
 			</div>
-			</form>
 		</div>
 	</div>
 
@@ -187,10 +183,10 @@ include('lib.php')
 							<td><?php print $var[2]; ?></td>
 							<td><?php print $var[3]; ?></td>
 							<td>
-							<button type="button" class="btn btn-primary" onclick="" id="btn-modal-modificar">
+							<button type="button" class="btn btn-primary" onclick="modificar(<?php print $var[0]; ?>)" id="btn-modal-modificar">
 							<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Modificar
 							</button>
-							<button type="button" class="btn btn-danger btn-sm" onclick="">
+							<button type="button" class="btn btn-danger btn-sm" onclick="eliminar(<?php print $var[0]; ?>)">
 							<span class="glyphicon glyphicon-trash"></span>
 							</button>
 							</td>
@@ -200,7 +196,7 @@ include('lib.php')
 				?>
 			</table>
 		</div>
-			<script>
+			<script id="boom">
 				var modal_agregar = document.getElementById("agregar-modal");
 				var modal = document.getElementById("modificar-modal");
 				var modal_eliminar = document.getElementById("elimitar-modal");
