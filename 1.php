@@ -51,8 +51,7 @@ if ($action == 'agregar') {
 							values ((select id_pro from doble))");
 }
 
-if ($action == 'hist1') {
-	$b64 =     (isset($_REQUEST['b64']) && !empty($_REQUEST['b64']))?$_REQUEST['b64']:1;
+if ($action == 'pac_hist') {
 	$nom_pac = (isset($_REQUEST['nom_pac']) && !empty($_REQUEST['nom_pac']))?$_REQUEST['nom_pac']:1;
 	$ape_pac = (isset($_REQUEST['ape_pac']) && !empty($_REQUEST['ape_pac']))?$_REQUEST['ape_pac']:1;
 	$tp_ced =  (isset($_REQUEST['tp_ced']) && !empty($_REQUEST['tp_ced']))?$_REQUEST['tp_ced']:1;
@@ -60,22 +59,18 @@ if ($action == 'hist1') {
 	$ced = $tp_ced."-".$ced_pac;
 	$fh_nac =  (isset($_REQUEST['fh_nac']) && !empty($_REQUEST['fh_nac']))?$_REQUEST['fh_nac']:1;
 	$edad =    (isset($_REQUEST['edad']) && !empty($_REQUEST['edad']))?$_REQUEST['edad']:1;
-	$gen = 	   (isset($_REQUEST['gen']) && !empty($_REQUEST['gen']))?$_REQUEST['gen']:1;
+	$gen = 	  (isset($_REQUEST['gen']) && !empty($_REQUEST['gen']))?$_REQUEST['gen']:1;
 	$tlf =     (isset($_REQUEST['tlf']) && !empty($_REQUEST['tlf']))?$_REQUEST['tlf']:1;
 	$direcc =  (isset($_REQUEST['direcc']) && !empty($_REQUEST['direcc']))?$_REQUEST['direcc']:1;
 	$esp =     (isset($_REQUEST['esp']) && !empty($_REQUEST['esp']))?$_REQUEST['esp']:1;
 	$tra =     (isset($_REQUEST['tra']) && !empty($_REQUEST['tra']))?$_REQUEST['tra']:1;
 
-	$sql="insert into paciente(nom_pac, ape_pac, ced_pac, fh_nac, direcc, edad, gen, tlf, esp, tra)
+	$sql1="insert into paciente(nom_pac, ape_pac, ced_pac, fh_nac, direcc, edad, gen, tlf, esp, tra)
 					values('$nom_pac','$ape_pac','$ced',to_date('$fh_nac','dd-mm-yyyy'),'$direcc',$edad,'$gen','$tlf',$esp,'$tra')";
-	$query = pg_query($con,$sql);
+	print $sql1;
+	// $query = pg_query($con,$sql);
 }
 
-if ($action == 'trat') {
-	print (isset($_REQUEST['fh_trat']) && !empty($_REQUEST['fh_trat']))?$_REQUEST['fh_trat']:1;
-	print (isset($_REQUEST['tit_trat']) && !empty($_REQUEST['tit_trat']))?$_REQUEST['tit_trat']:1;
-	print (isset($_REQUEST['trat']) && !empty($_REQUEST['trat']))?$_REQUEST['trat']:1;
-}
 
 if ($action == 'proceso') {
 	$puntero = (isset($_REQUEST['puntero']) && !empty($_REQUEST['puntero']))?$_REQUEST['puntero']:1;

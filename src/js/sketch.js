@@ -76,19 +76,7 @@
 			// return window.open(this.el.toDataURL(mime));
 			// modificado
 			var result_1 = this.el.toDataURL(mime);
-			var parametros = {"action":"hist1",
-									"b64":result_1,
-								   "nom_pac":$("#nom_pac").val(),
-									"ape_pac":$("#ape_pac").val(),
-									"tp_ced":$("#tp_ced").val(),
-									"ced_pac":$("#ced_pac").val(),
-									"fh_nac":$("#fh_nac").val(),
-									"edad":$("#edad").val(),
-									"gen":$("#gen").val(),
-									"tlf":$("#tlf").val(),
-									"direcc":$("#direcc").val(),
-									"esp":$("#esp").val(),
-									"tra":$("#tra").val()};
+			var parametros = {"action":"hist1",	"b64":result_1};
 			window.alert(result_1);
 			$.ajax({
 				type: "POST",
