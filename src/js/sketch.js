@@ -84,6 +84,7 @@
 					   "id_pac":$('#id_pac').val()},
 				success: function(a) {
 					$('#b64').html(a);
+					$('#submit_odonto').replaceWith('');
 				}
 			});
 		};

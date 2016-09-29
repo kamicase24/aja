@@ -16,7 +16,6 @@ $(function() {
 
 $(document).ready(function()
 {
-
 	$("#submit_hist_1").click(function() {
 		// if ($('#nom_pac').val() != '' && $('#ape_pac').val() != ''&&
 		    // $('#ced_pac').val() != '' && $('#fh_nac').val() != '' &&
@@ -29,83 +28,75 @@ $(document).ready(function()
 			var saveButton = $('<div class="col-md-12" id="div_trat_1"><br><input id="submit_trat_1" type="button" class="btn btn-primary form-control" value="Guardar Tratamiento"></div>');
 			saveButton.click(function(){
 				// if ($('#fh_trat').val() != '' && $('#tit_trat').val() != '' && $('#trat').val() != '') {
-					$.ajax({
-						type: "POST",
-						url: "1.php",
-						data: {"action":"tratamiento",
-								"fh_trat":$('#fh_trat').val(),
-								"tit_trat":$('#tit_trat').val(),
-								"trat":$('#trat').val(),
-								"id_hist":$('#id_hist').val(),
-								"id_pac":$('#id_pac').val()},
-						success: function(a){
-									$('#b64').html(a);
-									$('#div_trat_1').replaceWith('<div class="col-md-12" id="div_trat_2"><br><button onclick="modificar_trat()" type="button" id="submit_trat_2" class="btn btn-primary form-control">Modificar Tratamiento</button></div>');
-									$('#fh_trat').attr('disabled', 'true');
-									$('#tit_trat').attr('disabled', 'true');
-									$('#trat').attr('disabled', 'true');
-								}
-					});
-
+					// $.ajax({
+					// 	type: "POST",
+					// 	url: "1.php",
+					// 	data: {"action":"tratamiento",
+					// 			"fh_trat":$('#fh_trat').val(),
+					// 			"tit_trat":$('#tit_trat').val(),
+					// 			"trat":$('#trat').val(),
+					// 			"id_hist":$('#id_hist').val(),
+					// 			"id_pac":$('#id_pac').val()},
+					// 	success: function(a){
+					// 				$('#b64').html(a);
+					// 				var modTrat = $('#div_trat_1').replaceWith('<div class="col-md-12" id="div_trat_2"><br><input type="button" id="submit_trat_2" class="btn btn-primary form-control" value="Modificar Tratamiento"></div>');
+					// 				modTrat.click(function() {
+					// 					$('#fh_trat').attr('disabled', 'false');
+					// 					$('#tit_trat').attr('disabled', 'false');
+					// 					$('#trat').attr('disabled', 'false');
+					// 				});
+					// 				$('#fh_trat').attr('disabled', 'true');
+					// 				$('#tit_trat').attr('disabled', 'true');
+					// 				$('#trat').attr('disabled', 'true');
+					// 			}
+					// });
 				// } 
 				// else { window.alert('Uno o varios campos permanecen vacios por favor complete el formulario'); }
 			});
-			// var removeButton = $('<div class="col-md-6"><br><input type="button" class="btn btn-danger form-control" value="Eliminar Tratamiento"></div>');
-			// removeButton.click(function()
-			// {
-				// $(this).parent().remove();
-			// });
+
 			form_wraper.append(input_fh_trat);
 			form_wraper.append(fh_trat_dt);
 			form_wraper.append(input_tit_trat);
 			form_wraper.append(input_det_tart);
 			form_wraper.append(saveButton);
-			// form_wraper.append(removeButton);
 			$("#wraper_trat").append(form_wraper);
 
 			$('#trat_header').append('<div class="col-md-6"><h4>Tratamiento</h4></div>');
 			
-			$.ajax({
-				url: '1.php',
-				type: 'POST',
-				data: {'action': 'pac_hist',
-				"nom_pac":$("#nom_pac").val(), "ape_pac":$("#ape_pac").val(),
-				"tp_ced":$("#tp_ced ").val(),   "ced_pac":$("#ced_pac").val(),
-				"fh_nac":$("#fh_nac").val(),   "edad":$("#edad").val(),
-				"gen":$("#gen").val(),         "tlf":$("#tlf").val(),
-				"direcc":$("#direcc").val(),   "esp":$("#esp").val(),
-				"tra":$("#tra").val()},
-				success: function(a) {
-					$('#nueva_hist').replaceWith(a);
-					$('#submit_hist_1').replaceWith('<button type="button" class="btn btn-primary form-control" id="submit_hist_2">Modificar</button>');
-					$('#nom_pac').attr('disabled', 'true');
-					$('#ape_pac').attr('disabled', 'true');
-					$('#tp_ced').attr('disabled', 'true');
-					$('#ced_pac').attr('disabled', 'true');
-					$('#fh_nac').attr('disabled', 'true');
-					$('#edad').attr('disabled', 'true');
-					$('#gen').attr('disabled', 'true');
-					$('#tlf').attr('disabled', 'true');
-					$('#direcc').attr('disabled', 'true');
-					$('#esp').attr('disabled', 'true');
-					$('#tra').attr('disabled', 'true');
-				}
-			});
+			$('#odonto_header').removeAttr('hidden'); $('#odonto_wrapper').removeAttr('hidden');
+
+			// $.ajax({
+			// 	url: '1.php',
+			// 	type: 'POST',
+			// 	data: {'action': 'pac_hist',
+			// 	"nom_pac":$("#nom_pac").val(), "ape_pac":$("#ape_pac").val(),
+			// 	"tp_ced":$("#tp_ced ").val(),   "ced_pac":$("#ced_pac").val(),
+			// 	"fh_nac":$("#fh_nac").val(),   "edad":$("#edad").val(),
+			// 	"gen":$("#gen").val(),         "tlf":$("#tlf").val(),
+			// 	"direcc":$("#direcc").val(),   "esp":$("#esp").val(),
+			// 	"tra":$("#tra").val()},
+			// 	success: function(a) {
+			// 		$('#nueva_hist').replaceWith(a);
+			// 		$('#submit_hist_1').replaceWith('<button type="button" class="btn btn-primary form-control" id="submit_hist_2">Modificar</button>');
+			// 		$('#nom_pac').attr('disabled', 'true');
+			// 		$('#ape_pac').attr('disabled', 'true');
+			// 		$('#tp_ced').attr('disabled', 'true');
+			// 		$('#ced_pac').attr('disabled', 'true');
+			// 		$('#fh_nac').attr('disabled', 'true');
+			// 		$('#edad').attr('disabled', 'true');
+			// 		$('#gen').attr('disabled', 'true');
+			// 		$('#tlf').attr('disabled', 'true');
+			// 		$('#direcc').attr('disabled', 'true');
+			// 		$('#esp').attr('disabled', 'true');
+			// 		$('#tra').attr('disabled', 'true');
+			// 	}
+			// });
 		// }
 		// else {
-			// window.alert('Uno o varios campos permanecen vacios por favor complete el formulario');
+		// 	window.alert('Uno o varios campos permanecen vacios por favor complete el formulario');
 		// }
 	});
-
-
-
 });
-
-					function modificar_trat() {
-	$('#fh_trat').attr('disabled', 'false');
-	$('#tit_trat').attr('disabled', 'false');
-	$('#trat').attr('disabled', 'false');		
-}
 
 function Solo_Numerico(variable){
 	Numer=parseInt(variable);
@@ -117,4 +108,3 @@ function Solo_Numerico(variable){
 function ValNumero(Control){
 	Control.value=Solo_Numerico(Control.value);
 }
-

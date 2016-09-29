@@ -71,7 +71,6 @@ if ($action == 'pac_hist') {
 		values('$nom_pac','$ape_pac','$ced',to_date('$fh_nac','dd-mm-yyyy'),'$direcc',$edad,'$gen','$tlf',$esp,'$tra')
 		returning id_pac) insert into historias (id_pac, fh_his) 
 						values((select id_pac from doble), to_date('$fh_his', 'dd-mm-yyyy')) returning id_his,id_pac";
-	// print $sql1;
 	$query = pg_query($con,$sql1);
 	while ($var = pg_fetch_row($query)) {
 		print "<h3 id='hist_name'>HIST-".$var[0]."-".$var[1]."</h3>";
@@ -90,7 +89,6 @@ if ($action == "tratamiento") {
 	$sql = "insert into tratamiento(titulo, detalles, fecha, id_his)
 			values('$tit_trat', '$trat', to_date('$fh_trat', 'dd-mm-yyyy'), $id_hist)";
 	$query = pg_query($con,$sql);
-	print $query;
 }
 
 
@@ -161,33 +159,20 @@ if ($action == 'odonto') {
 	$data = base64_decode($img);
 	$file = UPLOAD_DIR . $hist_name . '.png';
 	$success = file_put_contents($file, $data);
-	print $success ? $file : 'No es posible guardar el Odontograma.';
+	// print $success ? $file : 'No es posible guardar el Odontograma.';
 
 
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// odontograma
 	// $dir = 'src/odontograma/';
 	// $fichero = scandir($dir);
 	// print_r($fichero);
 	// print "<img src='src/odontograma/".$fichero[3]."'>";
+
+
 // $sql = "WITH doble AS 
 // (INSERT INTO producto(nom_pro,det_pro,med) 
 // VALUES ('$nom_pro','$det_pro',$med) returning id_pro )

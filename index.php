@@ -30,17 +30,17 @@
 							<input type="submit" value="Entrar" name="bt_in" class="btn btn-success btn-sm" />
 							<div class="remember-forgot">
 								<div class="row">
-									<div class="col-md-5">
+<!-- 									<div class="col-md-5">
 										<div class="checkbox">
 											<label>
 												<input type="checkbox" />
 												Mantener Sesión
 											</label>
 										</div>
-									</div>
-									<div class="col-md-7 forgot-pass-content">
+									</div> -->
+<!-- 									<div class="col-md-7 forgot-pass-content">
 										<a href="registro.php" class="forgot-pass">Registrar Usuario</a>
-									</div>
+									</div> -->
 								</div>
 							</div>
 							<div class="remember-forgot">
