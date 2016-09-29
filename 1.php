@@ -65,10 +65,32 @@ if ($action == 'pac_hist') {
 	$esp =     (isset($_REQUEST['esp']) && !empty($_REQUEST['esp']))?$_REQUEST['esp']:1;
 	$tra =     (isset($_REQUEST['tra']) && !empty($_REQUEST['tra']))?$_REQUEST['tra']:1;
 
-	$sql1="insert into paciente(nom_pac, ape_pac, ced_pac, fh_nac, direcc, edad, gen, tlf, esp, tra)
-					values('$nom_pac','$ape_pac','$ced',to_date('$fh_nac','dd-mm-yyyy'),'$direcc',$edad,'$gen','$tlf',$esp,'$tra')";
-	print $sql1;
-	// $query = pg_query($con,$sql);
+	$fh_his = date('o-m-j');
+	$sql1="WITH doble AS
+		(insert into paciente(nom_pac, ape_pac, ced_pac, fh_nac, direcc, edad, gen, tlf, esp, tra)
+		values('$nom_pac','$ape_pac','$ced',to_date('$fh_nac','dd-mm-yyyy'),'$direcc',$edad,'$gen','$tlf',$esp,'$tra')
+		returning id_pac) insert into historias (id_pac, fh_his) 
+						values((select id_pac from doble), to_date('$fh_his', 'dd-mm-yyyy')) returning id_his,id_pac";
+	// print $sql1;
+	$query = pg_query($con,$sql1);
+	while ($var = pg_fetch_row($query)) {
+		print "<h3 id='hist_name'>HIST-".$var[0]."-".$var[1]."</h3>";
+		print "<input type='text' id='id_hist' hidden value='".$var[0]."' disabled>";
+		print "<input type='text' id='id_pac' hidden value='".$var[1]."' disabled>";
+	}
+}
+
+if ($action == "tratamiento") {
+	$fh_trat = (isset($_REQUEST['fh_trat']) && !empty($_REQUEST['fh_trat']))?$_REQUEST['fh_trat']:1;
+	$tit_trat = (isset($_REQUEST['tit_trat']) && !empty($_REQUEST['tit_trat']))?$_REQUEST['tit_trat']:1;
+	$trat = (isset($_REQUEST['trat']) && !empty($_REQUEST['trat']))?$_REQUEST['trat']:1;
+	$id_hist = (isset($_REQUEST['id_hist']) && !empty($_REQUEST['id_hist']))?$_REQUEST['id_hist']:1;
+	$id_pac = (isset($_REQUEST['id_pac']) && !empty($_REQUEST['id_pac']))?$_REQUEST['id_pac']:1;
+	
+	$sql = "insert into tratamiento(titulo, detalles, fecha, id_his)
+			values('$tit_trat', '$trat', to_date('$fh_trat', 'dd-mm-yyyy'), $id_hist)";
+	$query = pg_query($con,$sql);
+	print $query;
 }
 
 
@@ -126,6 +148,46 @@ if ($action == 'consumir') {
 			WHERE id_inv = $id_inv";
 	$query = pg_query($con,$sql);
 }
+
+if ($action == 'odonto') {
+
+	define('UPLOAD_DIR', 'src/odontograma/');
+	$odonto = (isset($_REQUEST['b64']) && !empty($_REQUEST['b64']))?$_REQUEST['b64']:1;
+	$id_hist = (isset($_REQUEST['id_hist']) && !empty($_REQUEST['id_hist']))?$_REQUEST['id_hist']:1;
+	$id_pac = (isset($_REQUEST['id_pac']) && !empty($_REQUEST['id_pac']))?$_REQUEST['id_pac']:1;
+	$hist_name =  "HIST-".$id_hist."-".$id_pac;
+	$img = str_replace('data:image/png;base64,', '', $odonto);
+	$img = str_replace(' ', '+', $img);
+	$data = base64_decode($img);
+	$file = UPLOAD_DIR . $hist_name . '.png';
+	$success = file_put_contents($file, $data);
+	print $success ? $file : 'No es posible guardar el Odontograma.';
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// $dir = 'src/odontograma/';
+	// $fichero = scandir($dir);
+	// print_r($fichero);
+	// print "<img src='src/odontograma/".$fichero[3]."'>";
 // $sql = "WITH doble AS 
 // (INSERT INTO producto(nom_pro,det_pro,med) 
 // VALUES ('$nom_pro','$det_pro',$med) returning id_pro )

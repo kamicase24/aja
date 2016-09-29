@@ -75,13 +75,13 @@
 			// orinal:
 			// return window.open(this.el.toDataURL(mime));
 			// modificado
-			var result_1 = this.el.toDataURL(mime);
-			var parametros = {"action":"hist1",	"b64":result_1};
-			window.alert(result_1);
+			// window.alert(this.el.toDataURL(mime));
 			$.ajax({
 				type: "POST",
 				url: "1.php",
-				data: parametros,
+				data: {"action":"odonto","b64":this.el.toDataURL(mime),
+					   "id_hist":$('#id_hist').val(),
+					   "id_pac":$('#id_pac').val()},
 				success: function(a) {
 					$('#b64').html(a);
 				}

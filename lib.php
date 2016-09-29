@@ -1,7 +1,8 @@
 <?php
 class Database_pro{
 	function conecta(){
-	$con = pg_pconnect("host=localhost port=5432 dbname=odontoiut2 password=123 user=jrojas");
+	$con = pg_pconnect("host=localhost port=5432 dbname=odontoiut2 password=1234 user=jesusrojas");
+	// $con = pg_pconnect("host=localhost port=5432 dbname=odontoiut2 password=123 user=jrojas");
 	return $con;
 	}
 }
@@ -65,10 +66,11 @@ class Odontoiut2{
 		$i = 0;
 		while ($var = pg_fetch_row($query)) {
 			$i++;
+			// print '<div class="col-md-1">';
 			print '<label class="checkbox-inline">';
-			print '<input type="checkbox" value="'.$var[1].'" name=""/>'.$var[1];
+			print '<input name="contra[]" id="contra" type="checkbox" value="'.$var[1].'"><strong>'.$var[1].'</strong>';
 			print '</label>';
-			if($i==4){ print '<br>'; $i = 0;}
+			// print '</div>';
 		}
 	}
 }
